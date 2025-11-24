@@ -174,6 +174,15 @@ class Metric:
         results = self.record['perceive'][game_name]
         accuracies = []
         debug_data = []
+
+        # Evaluate each result
+        error_states = {
+            'empty_as_piece': 0, # empty cell(-1) interpreted as O/X(0/1)
+            'piece_as_empty': 0, # O/X(0/1) interpreted as empty cell(-1)
+            'wrong_piece': 0,     # O interpreted as X or vice versa
+            'correct':0,
+            'total_cells':0
+        }
         for i, result in enumerate(results):
             if result is None or 'raw' not in result:
                 debug_data.append({
@@ -198,6 +207,27 @@ class Metric:
                 matrix_np = np.array(parsed_matrix)
                 accuracy = np.sum(gt_np == matrix_np) / gt_np.size
                 accuracies.append(accuracy)
+
+                error_detail = self._analyze_perceive_errors(gt_np, matrix_np)
+                entry['error_analysis'] = error_detail
+
+                for key in error_states:
+                    error_states[key] += error_detail.get(key, 0)
+
+                debug_data.append(entry)
+
+        # Calculate error percentages
+        total_cells = error_states['total_cells']
+        if total_cells > 0:
+            error_percentages = {
+                'empty_as_piece':round(error_states['empty_as_piece']/total_cells * 100, 2),
+                'piece_as_empty':round(error_states['piece_as_empty']/total_cells * 100, 2),
+                'wrong_piece':round(error_states['wrong_piece']/total_cells * 100, 2),
+                'correct':round(error_states['correct']/total_cells * 100, 2)
+            }
+        else:
+            error_percentages = {k: 0 for k in ['empty_as_piece', 'piece_as_empty', 'wrong_piece', 'correct']}
+       
         if 'perceive' not in self.debug_results:
             self.debug_results['perceive'] = {}
         self.debug_results['perceive'][game_name] = debug_data
@@ -205,8 +235,38 @@ class Metric:
                           len(accuracies), 3) if accuracies else 0
         if 'perceive' not in self.scores:
             self.scores['perceive'] = {}
-        self.scores['perceive'][game_name] = avg_score
+
+        # Store both average score and error analysis
+        self.scores['perceive'][game_name] = {
+            'average_accuracy': avg_score,
+            'error_percentages': error_percentages,
+            'error_states': error_states
+        }
         return avg_score
+    
+    def _analyze_perceive_errors(self, gt_np, matrix_np):
+        error_details = {
+            'empty_as_piece': 0,
+            'piece_as_empty': 0,
+            'wrong_piece': 0,
+            'correct': 0,
+            'total_cells': gt_np.size
+        }
+
+        empty_value = -1
+        piece_values = [0,1]
+
+        for gt_val, pred_val in zip(gt_np.flat, matrix_np.flat):
+            if gt_val == pred_val:
+                error_details['correct'] += 1
+            elif gt_val == empty_value and pred_val in piece_values:
+                error_details['empty_as_piece'] += 1
+            elif gt_val in piece_values and pred_val == empty_value:
+                error_details['piece_as_empty'] += 1
+            elif gt_val in piece_values and pred_val in piece_values and gt_val != pred_val:
+                error_details['wrong_piece'] += 1
+
+        return error_details
 
     def evaluate_qa(self, game_name, annotation):
         results = self.record['qa'][game_name]
