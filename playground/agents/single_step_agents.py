@@ -126,19 +126,19 @@ class LMDeployAgentSingleStep(BaseAgent):
     #     return outputs.text
 
 
-    def get_decision(self, example_image_path: str, test_image_path: str, prompt: str):
-        example_image = load_image(example_image_path)
-        test_image = load_image(test_image_path)
+    # def get_decision(self, example_image_path: str, test_image_path: str, prompt: str):
+    #     example_image = load_image(example_image_path)
+    #     test_image = load_image(test_image_path)
         
-        if self.is_deepseek_vl:
-            # You can customize the prompt structure
-            prompt = f'<IMAGE_TOKEN>Example: \n\n<IMAGE_TOKEN>Test: \n\n{prompt}'
-            images = [example_image, test_image]
-        else:
-            images = [example_image, test_image]
+    #     if self.is_deepseek_vl:
+    #         # You can customize the prompt structure
+    #         prompt = f'<IMAGE_TOKEN>Example: \n\n<IMAGE_TOKEN>Test: \n\n{prompt}'
+    #         images = [example_image, test_image]
+    #     else:
+    #         images = [example_image, test_image]
         
-        outputs = self.model((prompt, images), gen_config=self.gen_config)
-        return outputs.text 
+    #     outputs = self.model((prompt, images), gen_config=self.gen_config)
+    #     return outputs.text 
 
 
 
