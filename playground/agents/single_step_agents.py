@@ -118,9 +118,55 @@ class LMDeployAgentSingleStep(BaseAgent):
             backend_config=agent_cfg.lmm_agent.backend_config)
         self.gen_config = agent_cfg.lmm_agent.general_config
 
-    def get_decision(self, screenshot_path: str, prompt: str):
-        image = load_image(screenshot_path)
+    # def get_decision(self, screenshot_path: str, prompt: str):
+    #     image = load_image(screenshot_path)
+    #     if self.is_deepseek_vl:
+    #         prompt = '<IMAGE_TOKEN>' + prompt
+    #     outputs = self.model((prompt, image), gen_config=self.gen_config)
+    #     return outputs.text
+
+
+    def get_decision(self, example_image_path: str, test_image_path: str, prompt: str):
+        example_image = load_image(example_image_path)
+        test_image = load_image(test_image_path)
+        
         if self.is_deepseek_vl:
-            prompt = '<IMAGE_TOKEN>' + prompt
-        outputs = self.model((prompt, image), gen_config=self.gen_config)
-        return outputs.text
+            # You can customize the prompt structure
+            prompt = f'<IMAGE_TOKEN>Example: \n\n<IMAGE_TOKEN>Test: \n\n{prompt}'
+            images = [example_image, test_image]
+        else:
+            images = [example_image, test_image]
+        
+        outputs = self.model((prompt, images), gen_config=self.gen_config)
+        return outputs.text 
+
+
+
+    def get_decision(self, example_image_path: str, test_image_path: str, prompt: str):
+        example_image = load_image(example_image_path)
+        test_image = load_image(test_image_path)
+        
+        images = [example_image, test_image]
+        
+        # Add logging
+        print("="*50)
+        print("PROMPT SENT TO MODEL:")
+        print(prompt)
+        print("="*50)
+        print("IMAGE PATHS:")
+        print(f"Example: {example_image_path}")
+        print(f"Test: {test_image_path}")
+        print("="*50)
+        print("IMAGE INFO:")
+        print(f"Example image size: {example_image.size if hasattr(example_image, 'size') else 'N/A'}")
+        print(f"Test image size: {test_image.size if hasattr(test_image, 'size') else 'N/A'}")
+        print("="*50)
+        
+        if self.is_deepseek_vl:
+            prompt = '<IMAGE_TOKEN><IMAGE_TOKEN>' + prompt
+            print("MODIFIED PROMPT (with tokens):")
+            print(prompt)
+            print("="*50)
+        
+        outputs = self.model((prompt, images), gen_config=self.gen_config)
+        return outputs.text         

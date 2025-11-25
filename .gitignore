@@ -166,5 +166,6 @@ experiments
 archival_experiment_results
 rebuttal-exp
 benchmark/
+benchmark_sample100/
 evaluation_results
 .vscode
