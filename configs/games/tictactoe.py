@@ -22,7 +22,7 @@ game_description = dict(
          'situation, the strategy is a brief explanation of how you plan to '
          'win the game, and the position can be any combination of rows A to '
          'C and columns 1 to 3, for example, A1, 2B, or c3.'),
-    # Original version
+    #Original version
     perceive=(
         'Tic Tac Toe is a game played on a 3x3 grid where players take turns '
         'placing X or O in the cells. Given a screenshot of the game board, '
@@ -63,7 +63,7 @@ game_description = dict(
     #     '=== EXAMPLE ===\n'
     #     'The first image shows an example Tic Tac Toe board. '
     #     'The correct game state for this example board is:\n'
-    #     'Game State: [[-1, 1, 1], [0, 1, -1], [0, 0, 0]]\n\n'
+    #     'Game State: [[0, -1, -1], [0, 1, 1], [0, 1, -1]]\n\n'
         
     #     '=== YOUR TASK ===\n'
     #     'Now, analyze the second image (the test board). '

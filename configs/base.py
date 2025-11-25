@@ -9,8 +9,8 @@ benchmark_setting = dict(
     # sample_size=2000,
     # e2e_round=100,
     games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku'],
-    sample_size = 50,
-    e2e_round = 10,
+    sample_size = 100,
+    e2e_round = 20,
     offline_task=['perceive', 'qa', 'rule'],
     benchmark_path='benchmark'
 )
