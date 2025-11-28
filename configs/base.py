@@ -8,9 +8,12 @@ benchmark_setting = dict(
     #games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku', 'chess'],
     # sample_size=2000,
     # e2e_round=100,
-    games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku'],
+    #games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku'],
+    games=['tictactoe'],
+
     sample_size = 100,
     e2e_round = 20,
-    offline_task=['perceive', 'qa', 'rule'],
+    #offline_task=['perceive', 'qa', 'rule'],
+    offline_task=['forward_dynamics'],  # Add new task
     benchmark_path='benchmark'
 )

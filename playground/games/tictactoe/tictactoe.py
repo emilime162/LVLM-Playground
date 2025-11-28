@@ -150,6 +150,58 @@ class TicTacToeLogic(BaseGameLogic):
             return move
         return GameStatus.INVALID_MOVE
 
+ 
+    def get_forward_dynamics_state(self):
+      """Generate state for forward dynamics task."""
+      self.reset_board()
+      
+      # Create a valid in-progress game state
+      board_state, valid_moves = self.get_rule_state()
+      
+      # All possible moves
+      all_possible_moves = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']
+      
+      # 50% valid, 50% invalid move
+      if random.choice([True, False]) and valid_moves:
+          action = random.choice(valid_moves)
+          is_valid = True
+      else:
+          occupied_moves = [m for m in all_possible_moves if m not in valid_moves]
+          action = random.choice(occupied_moves) if occupied_moves else random.choice(all_possible_moves)
+          is_valid = False
+      
+      # Save current state (BEFORE any move)
+      current_board = self.board.copy()
+      current_state = board_state
+      
+      # DON'T execute the move here - just return the state info
+      # Let the benchmark code handle screenshot timing
+      
+      return {
+          'current_state': current_state,
+          'action': action,
+          'is_valid': is_valid,
+          'current_board': current_board,
+          'valid_moves': valid_moves  # Add this for easier processing
+      }
+    
+    def _board_to_matrix(self):
+        """Convert board to 3x3 matrix representation."""
+        matrix = []
+        for i in range(0, 9, 3):
+            row = []
+            for j in range(3):
+                cell = self.board[i + j]
+                if cell == 'X':
+                    row.append(1)
+                elif cell == 'O':
+                    row.append(0)
+                else:
+                    row.append(-1)
+            matrix.append(row)
+        return matrix
+
+
 
 class TicTacToeRenderer(QMainWindow):
     """Renderer for Tic Tac Toe UI."""
@@ -162,6 +214,8 @@ class TicTacToeRenderer(QMainWindow):
         self.select_font = QFont()
         self.select_font.setPointSize(35)
         self._update_ui()
+
+
 
     def _update_ui(self):
         color_map = {'X': 'red', 'O': 'blue'}
@@ -221,6 +275,11 @@ class TicTacToe(BaseGame):
 
     def get_rule_state(self):
         return self.logic.get_rule_state()
+
+
+    def get_forward_dynamics_state(self):
+        """Expose forward dynamics state generation."""
+        return self.logic.get_forward_dynamics_state()
 
     def ai_move(self):
         if not self.AI_component or self.logic.is_finish:
