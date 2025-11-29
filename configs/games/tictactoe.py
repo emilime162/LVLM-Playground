@@ -105,23 +105,40 @@ game_description = dict(
     # 'Which choice shows the correct state after this action?\n'
     # 'Answer: <number>')
 
-  forward_dynamics=(
-      'You will see 5 images of Tic Tac Toe boards.\n\n'
-      'Image-1 shows the INITIAL board state.\n'
-      'Images 2-5 show four POSSIBLE next states (labeled as choices 0, 1, 2, 3).\n\n'
-      'An action was taken: {action}\n\n'
-      'Task: Determine which of the four choices (0, 1, 2, or 3) correctly shows '
-      'the board state after taking action {action} on the initial board.\n\n'
-      'Important:\n'
-      '- If action {action} places a mark on an EMPTY cell, the board changes\n'
-      '- If action {action} tries to place on an OCCUPIED cell, the board stays the same (invalid move)\n\n'
-      'Think step by step:\n'
-      '1. Look at Image-1 (initial state)\n'
-      '2. Check if action {action} is valid (is that cell empty?)\n'
-      '3. If valid: find the choice that shows a new mark at {action}\n'
-      '4. If invalid: find the choice that looks identical to Image-1\n\n'
-      'Respond with ONLY the number 0, 1, 2, or 3.\n'
-      'Answer:'
+  # forward_dynamics=(
+  #     'You will see 5 images of Tic Tac Toe boards.\n\n'
+  #     'Image-1 shows the INITIAL board state.\n'
+  #     'Images 2-5 show four POSSIBLE next states (labeled as choices 0, 1, 2, 3).\n\n'
+  #     'An action was taken: {action}\n\n'
+  #     'Task: Determine which of the four choices (0, 1, 2, or 3) correctly shows '
+  #     'the board state after taking action {action} on the initial board.\n\n'
+  #     'Important:\n'
+  #     '- If action {action} places a mark on an EMPTY cell, the board changes\n'
+  #     '- If action {action} tries to place on an OCCUPIED cell, the board stays the same (invalid move)\n\n'
+  #     'Think step by step:\n'
+  #     '1. Look at Image-1 (initial state)\n'
+  #     '2. Check if action {action} is valid (is that cell empty?)\n'
+  #     '3. If valid: find the choice that shows a new mark at {action}\n'
+  #     '4. If invalid: find the choice that looks identical to Image-1\n\n'
+  #     'Respond with ONLY the number 0, 1, 2, or 3.\n'
+  #     'Answer:'
+  # )
+
+    forward_dynamics=(
+      'You see 5 Tic Tac Toe boards:\n'
+      'Image-1 = Initial state\n'
+      'Image-2 = Choice 0\n'
+      'Image-3 = Choice 1\n'
+      'Image-4 = Choice 2\n'
+      'Image-5 = Choice 3\n\n'
+      'Action attempted: {action}\n\n'
+      'First, briefly describe what you see in Image-1.\n'
+      'Then, determine which choice (0/1/2/3) correctly shows the result after action {action}.\n\n'
+      'Think step-by-step:\n'
+      '1. Is cell {action} empty or occupied in Image-1?\n'
+      '2. If empty: which choice shows a new mark at {action}?\n'
+      '3. If occupied: which choice is identical to Image-1?\n\n'
+      'Final Answer (just the number):'
   )
 
 )
