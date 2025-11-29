@@ -170,6 +170,34 @@ class Metric:
 
         return None, 'Answer format not matched (expected [A-D])'
 
+
+    def parse_forward_dynamics(self, lmm_output, _):
+        """Parse choice number (0-3) from forward_dynamics output."""
+        if lmm_output is None:
+            return None, 'No valid output found.'
+        
+        # Try multiple patterns to extract choice number
+        patterns = [
+            r'Answer:\s*([0-3])',           # "Answer: 2"
+            r'choice\s*([0-3])',            # "choice 1"
+            r'\b([0-3])\b'                  # standalone number
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, str(lmm_output), re.IGNORECASE)
+            if match:
+                return int(match.group(1)), None
+        
+        return None, 'Choice number not matched (expected 0-3)'
+
+
+
+
+
+
+
+
+
     def evaluate_perceive(self, game_name, annotation):
         results = self.record['perceive'][game_name]
         accuracies = []
@@ -282,6 +310,52 @@ class Metric:
         self.scores['rule'][game_name] = avg_score
         return avg_score
 
+    def evaluate_forward_dynamics(self, game_name, annotation):
+        """Evaluate forward dynamics task - MCQ with 4 choices."""
+        results = self.record['forward_dynamics'][game_name]
+        accuracies = []
+        debug_data = []
+        
+        for i, result in enumerate(results):
+            if result is None or 'raw' not in result:
+                debug_data.append({
+                    'index': i,
+                    'raw': None,
+                    'parsed': None,
+                    'reason': 'No raw output provided'
+                })
+                accuracies.append(0)
+                continue
+            
+            lmm_output = result['raw']
+            gt = annotation['annotations'][i]['gt']['correct_choice']
+            parsed_choice, reason = self.parse_forward_dynamics(lmm_output, game_name)
+            
+            entry = {'index': i, 'raw': lmm_output, 'parsed': parsed_choice}
+            if reason:
+                entry['reason'] = reason
+            debug_data.append(entry)
+            
+            accuracy = 1 if parsed_choice == gt else 0
+            accuracies.append(accuracy)
+        
+        if 'forward_dynamics' not in self.debug_results:
+            self.debug_results['forward_dynamics'] = {}
+        self.debug_results['forward_dynamics'][game_name] = debug_data
+        
+        avg_score = round(sum(accuracies) / len(accuracies), 3) if accuracies else 0
+        
+        if 'forward_dynamics' not in self.scores:
+            self.scores['forward_dynamics'] = {}
+        self.scores['forward_dynamics'][game_name] = avg_score
+        
+        return avg_score
+
+
+
+
+
+
     def evaluate_e2e(self, game_name):
         results = self.record['e2e'][game_name]
         scores = []
@@ -341,8 +415,11 @@ class Metric:
                     avg_score = self.evaluate_qa(game, annotation)
                 elif task == 'rule':
                     avg_score = self.evaluate_rule(game, annotation)
+                elif task == 'forward_dynamics':
+                    avg_score = self.evaluate_forward_dynamics(game, annotation)
                 elif task == 'e2e':
                     avg_score = self.evaluate_e2e(game)
+                    
 
                 game_ratings = self.GAME_RATINGS.get(game.lower(), {})
                 task_abilities = self.TASK_ABILITIES.get(task, [])

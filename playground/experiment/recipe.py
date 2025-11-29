@@ -100,12 +100,17 @@ class Recipe:
 
                     try:
                         if task != 'e2e':
+                            # Special handling for forward_dynamics (uses _before.jpg)
+                            if task == 'forward_dynamics':
+                                screenshot_filename = f'{next_round:07d}_before.jpg'
+                            else:
+                                screenshot_filename = f'{next_round:07d}.jpg'
                             batch = {
                                 'task':
                                 task,
                                 'screenshot_path':
                                 osp.join(self.benchmark_setting.benchmark_path,
-                                         task, game, f'{next_round:07d}.jpg'),
+                                         task, game, screenshot_filename),
                                 'gt':
                                 annotation['annotations'][next_round]['gt'],
                                 'game_cfg':

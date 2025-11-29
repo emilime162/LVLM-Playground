@@ -124,7 +124,41 @@ class LMDeployAgentSingleStep(BaseAgent):
             prompt = '<IMAGE_TOKEN>' + prompt
         outputs = self.model((prompt, image), gen_config=self.gen_config)
         return outputs.text
+  
 
+    def get_decision_multi_image(self, image_paths: list, prompt: str):
+      """Handle multiple images for forward_dynamics task."""
+      from lmdeploy.vl.constants import IMAGE_TOKEN
+      
+      # Load all images
+      images = [load_image(img_path) for img_path in image_paths]
+      
+      # Create numbered image tokens (Image-1, Image-2, etc.)
+      # This is the CORRECT format according to InternVL documentation
+      image_tokens = '\n'.join([f'Image-{i+1}: {IMAGE_TOKEN}' 
+                                for i in range(len(images))])
+      
+      # Combine image tokens with the actual prompt
+      full_prompt = f'{image_tokens}\n\n{prompt}'
+      
+      # LMDeploy supports multiple images as a list
+      outputs = self.model((full_prompt, images), gen_config=self.gen_config)
+      return outputs.text
+
+    # def get_decision_multi_image(self, image_paths: list, prompt: str):
+    #     """Handle multiple images for forward_dynamics task."""
+    #     # Load all images
+    #     images = [load_image(img_path) for img_path in image_paths]
+        
+    #     # For models that need image tokens
+    #     if self.is_deepseek_vl:
+    #         # Add one token per image
+    #         tokens = '<IMAGE_TOKEN>' * len(images)
+    #         prompt = tokens + prompt
+        
+    #     # LMDeploy supports multiple images as a list
+    #     outputs = self.model((prompt, images), gen_config=self.gen_config)
+    #     return outputs.text
 
     # def get_decision(self, example_image_path: str, test_image_path: str, prompt: str):
     #     example_image = load_image(example_image_path)

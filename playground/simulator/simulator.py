@@ -1,6 +1,6 @@
 import os
 import os.path as osp
-
+import re
 import imageio
 import torch
 
@@ -204,6 +204,141 @@ class GameSimulator:
             return dict(raw=lmm_output)
         else:
             raise ValueError('Failed to get screenshot.')
+
+
+
+
+
+    def forward_dynamics(self, batch):
+        """Run the game simulation in forward dynamics mode."""
+        if not self.agent:
+            raise ValueError('No agent set.')
+        
+        if self.game_instance is None:
+            self.new_game()
+        
+        # Extract data
+        action = batch['gt']['action']
+        is_valid = batch['gt']['is_valid']
+        current_state = batch['gt']['current_state']
+        
+        # Get image paths
+        before_image = batch['screenshot_path']
+        base_path = before_image.replace('_before.jpg', '')
+        choice_images = [f'{base_path}_choice_{i}.jpg' for i in range(4)]
+        all_images = [before_image] + choice_images
+        print("=" * 50)
+        print("DEBUG: Image paths being used:")
+        print(f"Before image: {before_image}")
+        print(f"Base path: {base_path}")
+        for i, img in enumerate(choice_images):
+            print(f"Choice {i}: {img}")
+        print("=" * 50)
+        
+        # ✓ Use config prompt and format with action
+        prompt_template = self.game_cfg.game_description[self.task]
+        prompt = prompt_template.format(action=action)
+
+
+        if all_images:
+            try:
+                if hasattr(self.agent, 'get_decision_multi_image'):
+                    lmm_output = self.agent.get_decision_multi_image(all_images, prompt)
+                else:
+                    self.log("Warning: Agent doesn't support multi-image.")
+                    lmm_output = self.agent.get_decision(before_image, prompt)
+            except Exception as e:
+                lmm_output = None
+                self.log(f'Failed to get decision from LMM: {e}')
+            
+            self.log(f'Prompt:\n {prompt}')
+            self.log(f'LMM Output: {lmm_output}')
+            self.log(f'Ground truth: 0')
+            return dict(raw=lmm_output)
+        else:
+            raise ValueError('Failed to get screenshot.')
+        
+        # try:
+        #     if hasattr(self.agent, 'get_decision_multi_image'):
+        #         lmm_output = self.agent.get_decision_multi_image(all_images, prompt)
+        #     else:
+        #         self.log("Warning: Agent doesn't support multi-image.")
+        #         lmm_output = self.agent.get_decision(before_image, prompt)
+        # except Exception as e:
+        #     lmm_output = None
+        #     self.log(f'Failed to get decision: {e}')
+        
+        # predicted_choice = self._parse_choice_number(lmm_output)
+        # is_correct = (predicted_choice == 0)
+        
+        # # Log results
+        # self.log(f'Action: {action}')
+        # self.log(f'Is Valid: {is_valid}')
+        # self.log(f'LMM Output: {lmm_output}')
+        # self.log(f'Predicted: {predicted_choice}, Correct: 0')
+        # self.log(f'Result: {"✓ CORRECT" if is_correct else "✗ INCORRECT"}')
+        
+        # return dict(
+        #     raw=lmm_output,
+        #     predicted_choice=predicted_choice,
+        #     correct_choice=0,
+        #     is_correct=is_correct,
+        #     action=action,
+        #     is_valid_action=is_valid
+        # )
+
+    # def _parse_choice_number(self, lmm_output):
+    #     """
+    #     Extract choice number (0-3) from LMM output.
+        
+    #     Handles various output formats:
+    #     - "Answer: 2" -> 2
+    #     - "The correct choice is 0" -> 0
+    #     - "3" -> 3
+    #     - "Choice 1 is correct" -> 1
+        
+    #     Args:
+    #         lmm_output: Raw text output from the language model
+            
+    #     Returns:
+    #         int: Extracted choice number (0-3), or -1 if parsing failed
+    #     """
+    #     if not lmm_output:
+    #         return -1
+        
+    #     lmm_output_str = str(lmm_output)
+        
+    #     # Pattern 1: "Answer: X" or "Answer:X"
+    #     match = re.search(r'Answer:\s*([0-3])', lmm_output_str, re.IGNORECASE)
+    #     if match:
+    #         return int(match.group(1))
+        
+    #     # Pattern 2: "Choice X" or "choice X"
+    #     match = re.search(r'choice\s*([0-3])', lmm_output_str, re.IGNORECASE)
+    #     if match:
+    #         return int(match.group(1))
+        
+    #     # Pattern 3: Just a standalone number 0-3
+    #     match = re.search(r'\b([0-3])\b', lmm_output_str)
+    #     if match:
+    #         return int(match.group(1))
+        
+    #     # Pattern 4: "The answer is X" or "It is X"
+    #     match = re.search(r'(?:answer|it)\s+is\s+([0-3])', lmm_output_str, re.IGNORECASE)
+    #     if match:
+    #         return int(match.group(1))
+        
+    #     # If no valid number found, return -1 (invalid)
+    #     self.log(f"Warning: Could not parse choice number from: {lmm_output_str[:100]}")
+    #     return -1
+
+
+
+
+
+
+
+
 
     def new_game(self, step_counter=0):
         """Initialize a new game instance."""

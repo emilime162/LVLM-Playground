@@ -29,6 +29,8 @@ class Evaluator:
             return self.run_rule(batch)
         elif self.task == 'qa':
             return self.run_qa(batch)
+        elif self.task == 'forward_dynamics':
+            return self.run_forward_dynamics(batch)
         else:
             raise ValueError(f'Invalid task type: {self.task}')
 
@@ -77,6 +79,20 @@ class Evaluator:
                                   self.task,
                                   log_file=self.log_file)
         result = simulator.qa(batch)
+
+        return result, simulator
+
+
+    def run_forward_dynamics(self, batch):
+        """Run forward dynamics evaluation."""
+        crt_save_path = osp.join(self.save_path)
+        simulator = GameSimulator(self.game_cfg,
+                                  self.agent,
+                                  self.seed,
+                                  crt_save_path,
+                                  self.task,
+                                  log_file=self.log_file)
+        result = simulator.forward_dynamics(batch)
 
         return result, simulator
 

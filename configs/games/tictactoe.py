@@ -83,6 +83,7 @@ game_description = dict(
         'where the position can be any combination of rows A to C and columns '
         '1 to 3, for example, A1, B2, or C3.'
     ),
+
     qa=(
         'Tic Tac Toe is a game played on a 3x3 grid where two players take '
         'turns placing X or O in the cells. The goal is to form a horizontal, '
@@ -93,14 +94,36 @@ game_description = dict(
         '{question}\n'
         'Answer: <answer>\n'
         'where <answer> should be one of A, B, C, or D.'
-    )
+    ),
 
 
-    forward_dynamics=(
-    'Given the initial Tic Tac Toe state and action "{action}", '
-    'which choice (0-3) shows the correct resulting state?\n'
-    'Answer: <number>'
+    # forward_dynamics=(
+    # 'You will see 5 images of a Tic Tac Toe game:\n'
+    # 'IMAGE 1: Initial state\n'
+    # 'IMAGE 2-5: Four possible next states (choices 0-3)\n\n'
+    # 'Action taken: {action}\n\n'
+    # 'Which choice shows the correct state after this action?\n'
+    # 'Answer: <number>')
+
+  forward_dynamics=(
+      'You will see 5 images of Tic Tac Toe boards.\n\n'
+      'Image-1 shows the INITIAL board state.\n'
+      'Images 2-5 show four POSSIBLE next states (labeled as choices 0, 1, 2, 3).\n\n'
+      'An action was taken: {action}\n\n'
+      'Task: Determine which of the four choices (0, 1, 2, or 3) correctly shows '
+      'the board state after taking action {action} on the initial board.\n\n'
+      'Important:\n'
+      '- If action {action} places a mark on an EMPTY cell, the board changes\n'
+      '- If action {action} tries to place on an OCCUPIED cell, the board stays the same (invalid move)\n\n'
+      'Think step by step:\n'
+      '1. Look at Image-1 (initial state)\n'
+      '2. Check if action {action} is valid (is that cell empty?)\n'
+      '3. If valid: find the choice that shows a new mark at {action}\n'
+      '4. If invalid: find the choice that looks identical to Image-1\n\n'
+      'Respond with ONLY the number 0, 1, 2, or 3.\n'
+      'Answer:'
   )
+
 )
 
 player_first = True
