@@ -162,9 +162,9 @@ cython_debug/
 #.idea/
 game_history
 helpers
-experiments
-archival_experiment_results
+#experiments
+#archival_experiment_results
 rebuttal-exp
-benchmark/
+#benchmark/
 #evaluation_results
 .vscode
