@@ -106,28 +106,56 @@ class Metric:
         self.weighted_summary = {}
 
     def parse_perceive(self, lmm_output, game_name):
-        match = re.search(r'(?:Game State:\s*)?(?:(\[\[.*\]\])|```(.*?)```)',
-                          lmm_output, re.DOTALL)
-        if not match:
-            return None, "No valid matrix or 'Game State:' found"
+        if not lmm_output:
+            return None, "No output provided"
 
-        matrix_str = match.group(1) if match.group(1) else match.group(
-            2).strip()
+        # 1. 锁定搜索区域：如果有 "Game State:"，只看后面的部分
+        target_content = lmm_output
+        if "Game State:" in lmm_output:
+            target_content = lmm_output.split("Game State:")[-1]
 
-        matrix_match = re.search(r'\[\[.*\]\]', matrix_str, re.DOTALL)
-        if not matrix_match:
-            return None, 'Matrix format not matched'
-        matrix_content = matrix_match.group(0)
+        # 2. 定义增强的正则表达式
+        # r'(\[\s*\[.*?\]\s*\])'
+        # \[    : 匹配最外层的左括号
+        # \s* : 允许中间有任意空白（包括换行符 \n, 空格）<-- 关键修改
+        # \[    : 匹配内层的左括号（第一行的开始）
+        # .*?   : 非贪婪匹配中间的所有内容
+        # \]    : 匹配内层的右括号（最后一行的结束）
+        # \s* : 允许中间有任意空白
+        # \]    : 匹配最外层的右括号
+        matrix_pattern = r'(\[\s*\[.*?\]\s*\])'
+        
+        # 3. 在目标区域搜索
+        matches = re.findall(matrix_pattern, target_content, re.DOTALL)
 
-        numbers = re.findall(r'-?\d+', matrix_content)
+        # 4. 兜底：如果 Game State 后没找到，全文搜一遍
+        if not matches and target_content != lmm_output:
+            matches = re.findall(matrix_pattern, lmm_output, re.DOTALL)
+        
+        if not matches:
+            return None, "No matrix pattern [[...]] found (checked multiline python format)"
+
+        # 5. 取最后一个匹配项 (Last One Wins)
+        final_matrix_str = matches[-1]
+
+        # 6. 提取数字 (这一步很强大，它会忽略掉所有的括号、逗号、换行符，只抓取数字)
+        numbers = re.findall(r'-?\d+', final_matrix_str)
+        
         config = self.MATRIX_CONFIG.get(game_name)
-        if not config or len(numbers) != config['count']:
-            return None, f"Number count mismatch: expected {config['count']}, got {len(numbers)}"  # noqa
+        if not config:
+            return None, f"Unknown game config: {game_name}"
+            
+        # 7. 校验数量
+        if len(numbers) != config['count']:
+            return None, f"Number count mismatch: expected {config['count']}, got {len(numbers)}. Parsed string: {final_matrix_str}"
 
         try:
             matrix_flat = [int(num) for num in numbers]
+            
+            # 校验数值范围
             if not all(num in config['valid_range'] for num in matrix_flat):
-                return None, f"Numbers out of range {config['valid_range']}"
+                 return None, f"Numbers out of range {config['valid_range']}"
+
             matrix = [
                 matrix_flat[i:i + config['size']]
                 for i in range(0, config['count'], config['size'])
@@ -175,6 +203,8 @@ class Metric:
         accuracies = []
         debug_data = []
 
+        verification_data = []
+
         # Evaluate each result
         error_states = {
             'empty_as_piece': 0, # empty cell(-1) interpreted as O/X(0/1)
@@ -193,6 +223,7 @@ class Metric:
                 })
                 accuracies.append(0)
                 continue
+
             lmm_output = result['raw']
             gt = annotation['annotations'][i]['gt']
             parsed_matrix, reason = self.parse_perceive(lmm_output, game_name)
@@ -202,6 +233,9 @@ class Metric:
             debug_data.append(entry)
             if parsed_matrix is None:
                 accuracies.append(0)
+                verification_data.append({
+                    'index': i, 'parsed': f"Parse Error: {reason}", 'gt': gt, 'score': 0, 'raw': lmm_output
+                })
             else:
                 gt_np = np.array(gt)
                 matrix_np = np.array(parsed_matrix)
@@ -215,6 +249,12 @@ class Metric:
                     error_states[key] += error_detail.get(key, 0)
 
                 debug_data.append(entry)
+
+                verification_data.append({
+                    'index': i, 'parsed': parsed_matrix, 'gt': gt, 'score': accuracy, 'raw': lmm_output
+                })
+        
+        self.log_verification('perceive', game_name, verification_data)
 
         # Calculate error percentages
         total_cells = error_states['total_cells']
@@ -429,3 +469,23 @@ class Metric:
         }
         with open(output_path, 'w') as f:
             json.dump(result, f, indent=4)
+    
+    def log_verification(self, task, game_name, log_data):
+        # 将日志保存在 record_path 同级目录下
+        base_dir = osp.dirname(self.record_path)
+        log_file = osp.join(base_dir, f"{game_name}_{task}_verification.json")
+        
+        with open(log_file, 'w', encoding='utf-8') as f:
+            f.write(f"Verification Log for {game_name} - {task}\n")
+            f.write(f"Total Records: {len(log_data)}\n")
+            f.write("="*50 + "\n")
+            
+            for entry in log_data:
+                f.write(f"Run #: {entry['index']}\n")
+                f.write(f"Result from AI (Parsed): {entry['parsed']}\n")
+                f.write(f"Ground True: {entry['gt']}\n")
+                f.write(f"Evaluator result (Score/Error): {entry['score']}\n")
+                f.write(f"Raw AI Output: {repr(entry['raw'])}\n") #以此检查是否因为格式问题导致解析失败
+                f.write("-" * 30 + "\n")
+        
+        print(f"Saved verification log to: {log_file}")
