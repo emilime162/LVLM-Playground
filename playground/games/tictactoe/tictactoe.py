@@ -202,6 +202,58 @@ class TicTacToeLogic(BaseGameLogic):
         return matrix
 
 
+    def get_inverse_dynamics_state(self):
+        """Generate state for inverse dynamics task."""
+        self.reset_board()
+        
+        board_state_before, valid_moves = self.get_rule_state()
+        
+        if not valid_moves:
+            return self.get_inverse_dynamics_state()
+        
+        # Save BOTH formats for before state
+        board_before = self.board.copy()  # ← Add this
+        current_state = board_state_before
+        
+        # Choose and apply action
+        action_taken = random.choice(valid_moves)
+        col_map = {'1': 0, '2': 1, '3': 2}
+        row_map = {'A': 0, 'B': 1, 'C': 2}
+        row = action_taken[0]
+        col = action_taken[1]
+        index = row_map[row] * 3 + col_map[col]
+        self.board[index] = self.opponent
+        
+        # Save BOTH formats for after state
+        board_after = self.board.copy()  # ← Add this
+        next_state = self._board_to_matrix()
+        
+        # Generate distractors...
+        other_valid_moves = [m for m in valid_moves if m != action_taken]
+        all_possible_moves = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']
+        occupied_moves = [m for m in all_possible_moves if m not in valid_moves]
+        invalid_move = random.choice(occupied_moves) if occupied_moves else None
+        
+        num_valid_distractors = min(3, len(other_valid_moves))
+        sampled_valid_distractors = random.sample(other_valid_moves, num_valid_distractors) if other_valid_moves else []
+        
+        distractors = sampled_valid_distractors.copy()
+        if invalid_move:
+            distractors.append(invalid_move)
+        random.shuffle(distractors)
+        
+        return {
+            'state_before': current_state,
+            'state_after': next_state,
+            'board_before': board_before,   # ← Add this
+            'board_after': board_after,     # ← Add this
+            'action_taken': action_taken,
+            'valid_distractors': sampled_valid_distractors,
+            'invalid_distractor': invalid_move,
+            'all_distractors': distractors,
+            'player_symbol': self.opponent,
+            'all_valid_moves_before': valid_moves
+        }
 
 class TicTacToeRenderer(QMainWindow):
     """Renderer for Tic Tac Toe UI."""
@@ -280,6 +332,10 @@ class TicTacToe(BaseGame):
     def get_forward_dynamics_state(self):
         """Expose forward dynamics state generation."""
         return self.logic.get_forward_dynamics_state()
+
+    def get_inverse_dynamics_state(self):
+        """Expose inverse dynamics state generation."""
+        return self.logic.get_inverse_dynamics_state()  
 
     def ai_move(self):
         if not self.AI_component or self.logic.is_finish:

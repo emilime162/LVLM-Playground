@@ -44,6 +44,8 @@ class Generator:
             self.render_qa(game_cfg, save_path)
         elif task == 'forward_dynamics':
             self.render_forward_dynamics(game_cfg, save_path)
+        elif task == 'inverse_dynamics':  # ADD THIS
+            self.render_inverse_dynamics(game_cfg, save_path)
         else:
             raise ValueError(f'Invalid task: {task}')
 
@@ -93,7 +95,98 @@ class Generator:
                 'game': game_cfg.game_name,
                 'annotations': annotations,
             }, json_file)
-    
+  
+    def render_inverse_dynamics(self, game_cfg, save_path):
+        """Generate inverse dynamics data with before/after images."""
+        game_class = GAME_REGISTRY.get(game_cfg.game_name)
+        annotations = []
+        
+        for i in range(self.sample_size):
+            game = game_class(game_cfg)
+            
+            # Get inverse dynamics data (includes before/after states and action)
+            inverse_data = game.get_inverse_dynamics_state()
+            
+            # Screenshot 1: BEFORE state (s_t)
+            game.logic.board = self._state_to_board(
+                inverse_data['state_before'], 
+                game.logic.opponent
+            )
+            screenshot_before = game.get_screenshot()
+            screenshot_before.save(osp.join(save_path, f'{i:07d}_before.jpg'))
+            
+            # Screenshot 2: AFTER state (s_t+1)
+            game.logic.board = self._state_to_board(
+                inverse_data['state_after'],
+                game.logic.opponent
+            )
+            screenshot_after = game.get_screenshot()
+            screenshot_after.save(osp.join(save_path, f'{i:07d}_after.jpg'))
+            
+            # Create multiple choice options
+            all_options = [inverse_data['action_taken']] + inverse_data['all_distractors']
+            random.shuffle(all_options)
+            correct_index = all_options.index(inverse_data['action_taken'])
+            
+            annotation = {
+                'file_before': f'{i:07d}_before.jpg',
+                'file_after': f'{i:07d}_after.jpg',
+                'gt': {
+                    'state_before': inverse_data['state_before'],
+                    'state_after': inverse_data['state_after'],
+                    'action_taken': inverse_data['action_taken'],
+                    'all_options': all_options,
+                    'correct_index': correct_index,
+                    'valid_distractors': inverse_data['valid_distractors'],
+                    'invalid_distractor': inverse_data['invalid_distractor'],
+                    'player_symbol': inverse_data['player_symbol']
+                }
+            }
+            annotations.append(annotation)
+            
+            if (i + 1) % 100 == 0:
+                print(f'Generated {i + 1}/{self.sample_size} inverse dynamics samples for {game_cfg.game_name}')
+        
+        # Save annotations
+        with open(osp.join(save_path, 'annotation.json'), 'w', encoding='utf-8') as json_file:
+            json.dump({
+                'task': 'inverse_dynamics',
+                'game': game_cfg.game_name,
+                'annotations': annotations,
+            }, json_file, indent=2)
+        
+        print(f'✓ Inverse dynamics benchmark generated: {save_path}')
+
+    def _state_to_board(self, state_matrix, opponent_symbol='X'):
+        """Convert state matrix back to board list for rendering.
+        
+        Args:
+            state_matrix: 3x3 matrix with values 1 (X), 0 (O), -1 (empty)
+            opponent_symbol: The player's symbol
+            
+        Returns:
+            list: Board representation compatible with game logic
+        """
+        board = []
+        cell_counter = 1
+        
+        for row in state_matrix:
+            for cell in row:
+                if cell == 1:
+                    board.append('X')
+                elif cell == 0:
+                    board.append('O')
+                else:
+                    # Empty cell - use number for UI display
+                    board.append(cell_counter)
+                cell_counter += 1
+        
+        return board
+
+
+
+
+
     def _generate_mcq_choices(self, game, game_class, game_cfg, dynamics_data, next_state, save_path, i):
         """Generate 4 MCQ choices."""
         choices = []

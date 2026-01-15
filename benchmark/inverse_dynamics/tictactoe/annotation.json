@@ -1,0 +1,5513 @@
+{
+  "task": "inverse_dynamics",
+  "game": "tictactoe",
+  "annotations": [
+    {
+      "file_before": "0000000_before.jpg",
+      "file_after": "0000000_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "A2",
+          "C1",
+          "B2",
+          "C2",
+          "B3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "B2",
+          "C1",
+          "A2"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000001_before.jpg",
+      "file_after": "0000001_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "C3",
+          "B3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000002_before.jpg",
+      "file_after": "0000002_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "B1",
+          "B2",
+          "A3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000003_before.jpg",
+      "file_after": "0000003_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "A3",
+          "B2",
+          "C1",
+          "B3",
+          "C3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C3",
+          "B3",
+          "C1"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000004_before.jpg",
+      "file_after": "0000004_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "B1",
+          "C3",
+          "B3",
+          "C1",
+          "A2"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "B3",
+          "B1"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000005_before.jpg",
+      "file_after": "0000005_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C3",
+          "A3",
+          "A2",
+          "B2",
+          "B3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "B2",
+          "A3",
+          "A2"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000006_before.jpg",
+      "file_after": "0000006_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "C2",
+          "B3",
+          "A2",
+          "B1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "B1",
+          "A2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000007_before.jpg",
+      "file_after": "0000007_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "B3",
+          "C2",
+          "A3",
+          "B2",
+          "A2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "B3",
+          "C2",
+          "B2"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000008_before.jpg",
+      "file_after": "0000008_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "C2",
+          "A3",
+          "B1",
+          "A1",
+          "B2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A1",
+          "A3",
+          "B1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000009_before.jpg",
+      "file_after": "0000009_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "C3",
+          "A1",
+          "A3",
+          "B3",
+          "C2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A3",
+          "B3",
+          "C3"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000010_before.jpg",
+      "file_after": "0000010_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "A2",
+          "B1",
+          "C3",
+          "B3",
+          "A3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "B1",
+          "C3",
+          "A2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000011_before.jpg",
+      "file_after": "0000011_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "A1",
+          "B1",
+          "A2",
+          "C3",
+          "A3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C3",
+          "B1",
+          "A3"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000012_before.jpg",
+      "file_after": "0000012_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "B3",
+          "B1",
+          "A1",
+          "C2",
+          "A3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
+          "C2",
+          "A1"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000013_before.jpg",
+      "file_after": "0000013_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "A3",
+          "B3",
+          "C1",
+          "C2",
+          "A2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A2",
+          "A3",
+          "C2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000014_before.jpg",
+      "file_after": "0000014_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "A2",
+          "A3",
+          "B3",
+          "C3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A3",
+          "B3"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000015_before.jpg",
+      "file_after": "0000015_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "C3",
+          "C1",
+          "C2",
+          "A3",
+          "B2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A3",
+          "C1",
+          "C3"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000016_before.jpg",
+      "file_after": "0000016_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "C1",
+          "B2",
+          "C2",
+          "A2",
+          "B3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A2",
+          "C1",
+          "C2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000017_before.jpg",
+      "file_after": "0000017_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "C1",
+          "A1",
+          "A3",
+          "B1",
+          "B2"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C1",
+          "B1",
+          "A1"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000018_before.jpg",
+      "file_after": "0000018_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "A1",
+          "A2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000019_before.jpg",
+      "file_after": "0000019_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "C2",
+          "C3",
+          "A1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A1"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000020_before.jpg",
+      "file_after": "0000020_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B1",
+          "B2",
+          "A2",
+          "C2",
+          "A1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "B1",
+          "A2",
+          "B2"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000021_before.jpg",
+      "file_after": "0000021_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "C2",
+          "A2",
+          "C3",
+          "A3",
+          "B2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C2",
+          "C3",
+          "B2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000022_before.jpg",
+      "file_after": "0000022_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "A1",
+          "B1",
+          "C1",
+          "A2",
+          "B3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C1",
+          "B3",
+          "A1"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000023_before.jpg",
+      "file_after": "0000023_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "B1",
+          "C2",
+          "C3",
+          "A1",
+          "A3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "B1",
+          "A3",
+          "C3"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000024_before.jpg",
+      "file_after": "0000024_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "C3",
+          "B2",
+          "C1",
+          "A1",
+          "B3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "C1",
+          "B2",
+          "B3"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000025_before.jpg",
+      "file_after": "0000025_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B2",
+          "C3",
+          "C1",
+          "C2",
+          "A3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "C1",
+          "A3",
+          "C3"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000026_before.jpg",
+      "file_after": "0000026_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "B3",
+          "C2",
+          "C1",
+          "B1",
+          "A1"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C2",
+          "B3",
+          "C1"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000027_before.jpg",
+      "file_after": "0000027_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "B2",
+          "C3",
+          "A3",
+          "A1",
+          "B1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
+          "B1",
+          "C3"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000028_before.jpg",
+      "file_after": "0000028_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "A3",
+          "C2",
+          "A2",
+          "C3",
+          "B3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A3",
+          "A2",
+          "C2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000029_before.jpg",
+      "file_after": "0000029_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B2",
+          "C3",
+          "C2",
+          "B3",
+          "A3"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "B2",
+          "B3",
+          "C3"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000030_before.jpg",
+      "file_after": "0000030_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "A3",
+          "C2",
+          "B1",
+          "C1",
+          "B3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B1",
+          "B3",
+          "A3"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000031_before.jpg",
+      "file_after": "0000031_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C3",
+          "A2",
+          "C2",
+          "B3",
+          "B2"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "C2",
+          "C3",
+          "B2"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000032_before.jpg",
+      "file_after": "0000032_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "A1",
+          "B2",
+          "C1",
+          "C3",
+          "A3"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A3",
+          "B2",
+          "A1"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000033_before.jpg",
+      "file_after": "0000033_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "B1",
+          "C3",
+          "A3",
+          "B2",
+          "C1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B2",
+          "B1",
+          "A3"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000034_before.jpg",
+      "file_after": "0000034_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "A1",
+          "A2",
+          "C3",
+          "C2",
+          "A3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C2",
+          "C3",
+          "A2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000035_before.jpg",
+      "file_after": "0000035_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "B2",
+          "A2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000036_before.jpg",
+      "file_after": "0000036_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C1",
+          "C2",
+          "B3",
+          "A3",
+          "B2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A3",
+          "C1",
+          "C2"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000037_before.jpg",
+      "file_after": "0000037_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "A1",
+          "B1",
+          "C1",
+          "B2",
+          "A3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "B2",
+          "A1",
+          "B1"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000038_before.jpg",
+      "file_after": "0000038_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "A1",
+          "A3",
+          "C3",
+          "B3",
+          "B1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B3",
+          "B1",
+          "C3"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000039_before.jpg",
+      "file_after": "0000039_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "C3",
+          "A2",
+          "A1",
+          "B3",
+          "B1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A2",
+          "B1",
+          "B3"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000040_before.jpg",
+      "file_after": "0000040_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "B1",
+          "C1",
+          "B2",
+          "C3",
+          "A2"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C3",
+          "B1",
+          "B2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000041_before.jpg",
+      "file_after": "0000041_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "B3",
+          "C1",
+          "A3",
+          "B2",
+          "A1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B3",
+          "A1",
+          "A3"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000042_before.jpg",
+      "file_after": "0000042_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "A1",
+          "B1",
+          "A2",
+          "C3",
+          "C2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A1",
+          "C2",
+          "A2"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000043_before.jpg",
+      "file_after": "0000043_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "C3",
+          "B1",
+          "A2",
+          "A1",
+          "B3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B3",
+          "A1",
+          "C3"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000044_before.jpg",
+      "file_after": "0000044_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "A2",
+          "C1",
+          "C2",
+          "C3",
+          "A3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C3",
+          "C2",
+          "A2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000045_before.jpg",
+      "file_after": "0000045_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "A3",
+          "B1",
+          "B2",
+          "C1",
+          "A1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A1",
+          "C1",
+          "B2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000046_before.jpg",
+      "file_after": "0000046_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "B2",
+          "C1",
+          "B3",
+          "B1",
+          "C3"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "B1",
+          "B2",
+          "C1"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000047_before.jpg",
+      "file_after": "0000047_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C1",
+          "B3",
+          "C3",
+          "B1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C1",
+          "C3"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000048_before.jpg",
+      "file_after": "0000048_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C3",
+          "A2",
+          "A1",
+          "B3",
+          "B1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "A1",
+          "C3"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000049_before.jpg",
+      "file_after": "0000049_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "C1",
+          "B1",
+          "B2",
+          "A3",
+          "A1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "C1",
+          "B2",
+          "B1"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000050_before.jpg",
+      "file_after": "0000050_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "A1",
+          "C1",
+          "A3",
+          "A2",
+          "B2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "C1",
+          "A2",
+          "A1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000051_before.jpg",
+      "file_after": "0000051_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "B3",
+          "C1",
+          "C2",
+          "A1",
+          "A3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C1",
+          "C2",
+          "A1"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000052_before.jpg",
+      "file_after": "0000052_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C3",
+          "B3",
+          "A3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C3"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000053_before.jpg",
+      "file_after": "0000053_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "A1",
+          "B1",
+          "B2",
+          "C1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C1",
+          "A1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000054_before.jpg",
+      "file_after": "0000054_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "A1",
+          "B2",
+          "C3",
+          "B1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A1",
+          "C3"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000055_before.jpg",
+      "file_after": "0000055_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "B1",
+          "A3",
+          "C1",
+          "B3",
+          "C2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C2",
+          "A3",
+          "C1"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000056_before.jpg",
+      "file_after": "0000056_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "A2",
+          "A1",
+          "C1",
+          "B2",
+          "A3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A1",
+          "A3",
+          "C1"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000057_before.jpg",
+      "file_after": "0000057_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B2",
+          "A1",
+          "C3",
+          "A2",
+          "C2"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C3",
+          "A2",
+          "B2"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000058_before.jpg",
+      "file_after": "0000058_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "A3",
+          "C1",
+          "B3",
+          "B2",
+          "A1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A1",
+          "A3",
+          "B2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000059_before.jpg",
+      "file_after": "0000059_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B2",
+          "C2",
+          "A3",
+          "A1",
+          "C1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B2",
+          "A1",
+          "C1"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000060_before.jpg",
+      "file_after": "0000060_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "A3",
+          "A1",
+          "A2",
+          "C3",
+          "C2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C2",
+          "A2",
+          "A3"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000061_before.jpg",
+      "file_after": "0000061_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "A1",
+          "B3",
+          "C2",
+          "A2",
+          "C3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C2",
+          "C3",
+          "A2"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000062_before.jpg",
+      "file_after": "0000062_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "B1",
+          "B2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000063_before.jpg",
+      "file_after": "0000063_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "A2",
+          "B1",
+          "B3",
+          "B2",
+          "A1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A1",
+          "B2",
+          "B3"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000064_before.jpg",
+      "file_after": "0000064_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "A2",
+          "C1",
+          "A3",
+          "B2",
+          "B1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A2",
+          "B2",
+          "B1"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000065_before.jpg",
+      "file_after": "0000065_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "A2",
+          "C3",
+          "B3"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "C3"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000066_before.jpg",
+      "file_after": "0000066_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "C3",
+          "C1",
+          "A3",
+          "A1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "C3",
+          "C1"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000067_before.jpg",
+      "file_after": "0000067_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "A2",
+          "A3",
+          "B2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "B2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000068_before.jpg",
+      "file_after": "0000068_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "A3",
+          "B2",
+          "C1",
+          "A2"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "B2",
+          "A3"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000069_before.jpg",
+      "file_after": "0000069_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "A1",
+          "C1",
+          "B3",
+          "B2",
+          "C3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "A1",
+          "B2",
+          "B3"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000070_before.jpg",
+      "file_after": "0000070_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "C2",
+          "A3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [],
+        "invalid_distractor": "C2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000071_before.jpg",
+      "file_after": "0000071_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "B2",
+          "B3",
+          "A2",
+          "C1",
+          "B1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "B1",
+          "B3"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000072_before.jpg",
+      "file_after": "0000072_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "A3",
+          "A2",
+          "B2",
+          "C1",
+          "B1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A3",
+          "A2",
+          "B1"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000073_before.jpg",
+      "file_after": "0000073_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "C3",
+          "A2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000074_before.jpg",
+      "file_after": "0000074_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "C2",
+          "A1",
+          "A2",
+          "C3",
+          "B3"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A1",
+          "C3",
+          "C2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000075_before.jpg",
+      "file_after": "0000075_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "C1",
+          "B3",
+          "C2",
+          "A3",
+          "A1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C1",
+          "A1",
+          "C2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000076_before.jpg",
+      "file_after": "0000076_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B2",
+          "A2",
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "C3",
+          "B2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000077_before.jpg",
+      "file_after": "0000077_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "B3",
+          "B2",
+          "A2",
+          "C3",
+          "A3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A2",
+          "B2",
+          "A3"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000078_before.jpg",
+      "file_after": "0000078_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "C3"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "B2",
+          "C3",
+          "A3"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000079_before.jpg",
+      "file_after": "0000079_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "C1",
+          "B2",
+          "A3",
+          "C2",
+          "B3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C2",
+          "A3",
+          "B2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000080_before.jpg",
+      "file_after": "0000080_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "A1",
+          "B3",
+          "B1",
+          "A2",
+          "C3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A1",
+          "B1",
+          "B3"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000081_before.jpg",
+      "file_after": "0000081_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "B1",
+          "A3",
+          "C2",
+          "C1",
+          "B3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C1",
+          "B3",
+          "C2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000082_before.jpg",
+      "file_after": "0000082_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "B1",
+          "A2"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000083_before.jpg",
+      "file_after": "0000083_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "C3",
+          "C1",
+          "B2",
+          "A1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "C3",
+          "B2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000084_before.jpg",
+      "file_after": "0000084_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "A1",
+          "B3",
+          "C2",
+          "B2",
+          "A2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "B2",
+          "A2",
+          "C2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000085_before.jpg",
+      "file_after": "0000085_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "A1",
+          "A2",
+          "B2",
+          "C2",
+          "B1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A1",
+          "C2",
+          "A2"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000086_before.jpg",
+      "file_after": "0000086_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "B1",
+          "A2",
+          "A1",
+          "C3",
+          "C2"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "A2",
+          "B1",
+          "A1"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000087_before.jpg",
+      "file_after": "0000087_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "B3",
+          "C1",
+          "B2",
+          "A3",
+          "C2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "B3",
+          "C1",
+          "C2"
+        ],
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000088_before.jpg",
+      "file_after": "0000088_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "C1",
+          "C3",
+          "C2",
+          "B3",
+          "A3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "C2",
+          "B3",
+          "C3"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000089_before.jpg",
+      "file_after": "0000089_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "C1",
+          "A2",
+          "A1",
+          "B3",
+          "C2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "B3",
+          "A2",
+          "A1"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000090_before.jpg",
+      "file_after": "0000090_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "C3",
+          "A2",
+          "C1",
+          "C2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A2",
+          "C3"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000091_before.jpg",
+      "file_after": "0000091_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "A3",
+          "A1",
+          "B3",
+          "C2",
+          "C1"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "B3",
+          "A3",
+          "C2"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000092_before.jpg",
+      "file_after": "0000092_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "B3",
+          "C3",
+          "A1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C3"
+        ],
+        "invalid_distractor": "A1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000093_before.jpg",
+      "file_after": "0000093_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "B2",
+          "A1",
+          "C2",
+          "A3",
+          "B3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C2",
+          "B3",
+          "A3"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000094_before.jpg",
+      "file_after": "0000094_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "A2",
+          "C1",
+          "B1",
+          "A1",
+          "C3"
+        ],
+        "correct_index": 4,
+        "valid_distractors": [
+          "A2",
+          "C1",
+          "A1"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000095_before.jpg",
+      "file_after": "0000095_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "C3",
+          "B3",
+          "A2",
+          "A3",
+          "A1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
+          "A1",
+          "A2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000096_before.jpg",
+      "file_after": "0000096_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "A1",
+          "A3",
+          "C3",
+          "B1",
+          "C2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
+          "B1",
+          "C3"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000097_before.jpg",
+      "file_after": "0000097_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ]
+        ],
+        "action_taken": "C2",
+        "all_options": [
+          "C2",
+          "A2",
+          "C1",
+          "C3",
+          "B2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A2",
+          "C3",
+          "C1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000098_before.jpg",
+      "file_after": "0000098_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "C1",
+        "all_options": [
+          "C2",
+          "A1",
+          "A2",
+          "C1",
+          "C3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "C3",
+          "A1"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000099_before.jpg",
+      "file_after": "0000099_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "B1",
+          "C3",
+          "A2",
+          "B3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A2",
+          "B1"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
+      }
+    }
+  ]
+}

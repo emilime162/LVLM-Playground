@@ -333,7 +333,62 @@ class GameSimulator:
     #     return -1
 
 
-
+    def inverse_dynamics(self, batch):
+        """Run the game simulation in inverse dynamics mode."""
+        if not self.agent:
+            raise ValueError('No agent set.')
+        
+        if self.game_instance is None:
+            self.new_game()
+        
+        # Extract data from batch
+        action_taken = batch['gt']['action_taken']
+        state_before = batch['gt']['state_before']
+        state_after = batch['gt']['state_after']
+        all_distractors = batch['gt'].get('all_distractors', [])
+        
+        # Get image paths - expecting two separate images
+        before_image = batch['screenshot_path_before']
+        after_image = batch['screenshot_path_after']
+        
+        # Create all options (correct + distractors) for prompt
+        all_options = [action_taken] + all_distractors
+        # Note: The batch should already have these shuffled with correct_index tracked
+        
+        # Format prompt with options
+        prompt_template = self.game_cfg.game_description[self.task]
+        options_text = '\n'.join([f"{i}. {opt}" for i, opt in enumerate(all_options)])
+        prompt = prompt_template.format(options=options_text)
+        
+        self.log(f"Before state: {state_before}")
+        self.log(f"After state: {state_after}")
+        self.log(f"Options: {all_options}")
+        self.log(f"Correct action: {action_taken}")
+        
+        # Call agent with both images
+        try:
+            if hasattr(self.agent, 'get_decision_multi_image'):
+                # Use multi-image method for models that support it
+                images = [before_image, after_image]
+                lmm_output = self.agent.get_decision_multi_image(images, prompt)
+            else:
+                # Fallback: concatenate images or use before image only
+                self.log("Warning: Agent doesn't support multi-image. Using before image only.")
+                lmm_output = self.agent.get_decision(before_image, prompt)
+        except Exception as e:
+            lmm_output = None
+            self.log(f'Failed to get decision from LMM: {e}')
+        
+        self.log(f'Prompt:\n{prompt}')
+        self.log(f'LMM Output: {lmm_output}')
+        self.log(f'Ground truth: {action_taken}')
+        
+        return dict(
+            raw=lmm_output,
+            correct_answer=action_taken,
+            all_options=all_options,
+            correct_index=batch['gt'].get('correct_index', 0)
+        )
 
 
 
