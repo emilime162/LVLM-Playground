@@ -70,19 +70,19 @@ class Recipe:
                     self.record[task] = {}
                 if game not in self.record[task]:
                     self.record[task][game] = [None
-                                               ] * self.recipe.repetition_round
+                                              ] * self.recipe.repetition_round
                     self.save_record()
 
                 if task != 'e2e':
                     with open(osp.join(self.benchmark_setting.benchmark_path,
-                                       task, game, 'annotation.json'),
+                                      task, game, 'annotation.json'),
                               'r',
                               encoding='utf-8') as json_file:
                         annotation = json.load(json_file)
                     assert annotation['game'] == game
                     assert annotation['task'] == task
                     assert len(annotation['annotations']
-                               ) == self.benchmark_setting.sample_size
+                              ) == self.benchmark_setting.sample_size
 
                 completed_rounds = self.record[task][game]
 
@@ -100,24 +100,41 @@ class Recipe:
 
                     try:
                         if task != 'e2e':
+                            # Special handling for inverse_dynamics (uses TWO images)
+                            if task == 'inverse_dynamics':
+                                batch = {
+                                    'task': task,
+                                    'screenshot_path_before': osp.join(
+                                        self.benchmark_setting.benchmark_path,
+                                        task, game, f'{next_round:07d}_before.jpg'
+                                    ),
+                                    'screenshot_path_after': osp.join(
+                                        self.benchmark_setting.benchmark_path,
+                                        task, game, f'{next_round:07d}_after.jpg'
+                                    ),
+                                    'gt': annotation['annotations'][next_round]['gt'],
+                                    'game_cfg': game_cfg
+                                }
                             # Special handling for forward_dynamics (uses _before.jpg)
-                            if task == 'forward_dynamics':
-                                screenshot_filename = f'{next_round:07d}_before.jpg'
+                            # Standard tasks (perceive, qa, rule, reward_modeling)
                             else:
-                                screenshot_filename = f'{next_round:07d}.jpg'
-                            batch = {
-                                'task':
-                                task,
-                                'screenshot_path':
-                                osp.join(self.benchmark_setting.benchmark_path,
-                                         task, game, screenshot_filename),
-                                'gt':
-                                annotation['annotations'][next_round]['gt'],
-                                'game_cfg':
-                                game_cfg
-                            }
+                                if task == 'forward_dynamics':
+                                    screenshot_filename = f'{next_round:07d}_before.jpg'
+                                else:
+                                    screenshot_filename = f'{next_round:07d}.jpg'
+                                
+                                batch = {
+                                    'task': task,
+                                    'screenshot_path': osp.join(
+                                        self.benchmark_setting.benchmark_path,
+                                        task, game, screenshot_filename
+                                    ),
+                                    'gt': annotation['annotations'][next_round]['gt'],
+                                    'game_cfg': game_cfg
+                                }
                         else:
                             batch = {'task': task, 'game_cfg': game_cfg}
+                        
                         result, simulator = evaluator.run(batch)
                         simulator.cleanup()
                         self.record[task][game][next_round] = result

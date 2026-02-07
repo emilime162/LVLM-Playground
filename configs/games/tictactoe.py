@@ -96,50 +96,56 @@ game_description = dict(
         'where <answer> should be one of A, B, C, or D.'
     ),
 
-
-    # forward_dynamics=(
-    # 'You will see 5 images of a Tic Tac Toe game:\n'
-    # 'IMAGE 1: Initial state\n'
-    # 'IMAGE 2-5: Four possible next states (choices 0-3)\n\n'
-    # 'Action taken: {action}\n\n'
-    # 'Which choice shows the correct state after this action?\n'
-    # 'Answer: <number>')
-
-  # forward_dynamics=(
-  #     'You will see 5 images of Tic Tac Toe boards.\n\n'
-  #     'Image-1 shows the INITIAL board state.\n'
-  #     'Images 2-5 show four POSSIBLE next states (labeled as choices 0, 1, 2, 3).\n\n'
-  #     'An action was taken: {action}\n\n'
-  #     'Task: Determine which of the four choices (0, 1, 2, or 3) correctly shows '
-  #     'the board state after taking action {action} on the initial board.\n\n'
-  #     'Important:\n'
-  #     '- If action {action} places a mark on an EMPTY cell, the board changes\n'
-  #     '- If action {action} tries to place on an OCCUPIED cell, the board stays the same (invalid move)\n\n'
-  #     'Think step by step:\n'
-  #     '1. Look at Image-1 (initial state)\n'
-  #     '2. Check if action {action} is valid (is that cell empty?)\n'
-  #     '3. If valid: find the choice that shows a new mark at {action}\n'
-  #     '4. If invalid: find the choice that looks identical to Image-1\n\n'
-  #     'Respond with ONLY the number 0, 1, 2, or 3.\n'
-  #     'Answer:'
-  # )
-
     forward_dynamics=(
-      'You see 5 Tic Tac Toe boards:\n'
-      'Image-1 = Initial state\n'
-      'Image-2 = Choice 0\n'
-      'Image-3 = Choice 1\n'
-      'Image-4 = Choice 2\n'
-      'Image-5 = Choice 3\n\n'
-      'Action attempted: {action}\n\n'
-      'First, briefly describe what you see in Image-1.\n'
-      'Then, determine which choice (0/1/2/3) correctly shows the result after action {action}.\n\n'
-      'Think step-by-step:\n'
-      '1. Is cell {action} empty or occupied in Image-1?\n'
-      '2. If empty: which choice shows a new mark at {action}?\n'
-      '3. If occupied: which choice is identical to Image-1?\n\n'
-      'Final Answer (just the number):'
-  )
+        'Tic Tac Toe is a game played on a 3x3 grid where players take turns '
+        'placing X or O in the cells. Given a screenshot of the initial game board '
+        'and a proposed action, please determine what the board will look like after '
+        'that action is taken. You will be shown 5 images: the first image shows the '
+        'initial state, and images 2-5 show four possible next states (choices 0-3). '
+        'Note that if the action attempts to place a mark on an already occupied cell, '
+        'the board remains unchanged. You will be given 4 options (0-3) to choose from. '
+        'Please strictly follow the format:\n'
+        'Answer: <number>\n'
+        'where <number> is 0, 1, 2, or 3. For example,\n'
+        'Answer: 0\n\n'
+        'Action: {action}\n'
+        'Image-1: Initial state\n'
+        'Image-2: Choice 0\n'
+        'Image-3: Choice 1\n'
+        'Image-4: Choice 2\n'
+        'Image-5: Choice 3'
+    )
+
+    inverse_dynamics=(
+        'Tic Tac Toe is a game played on a 3x3 grid where players take turns '
+        'placing X or O in the cells. Given two screenshots of the game board, '
+        'the first showing the state BEFORE an action and the second showing '
+        'the state AFTER an action, please determine which action was taken. '
+        'The grid is labeled with rows A to C and columns 1 to 3. '
+        'You will be given 4 options (0-3) to choose from. Please strictly '
+        'follow the format:\n'
+        'Answer: <number>\n'
+        'where <number> is 0, 1, 2, or 3. For example,\n'
+        'Answer: 2\n\n'
+        'Options:\n{options}'
+    ),
+
+    reward_modeling=(
+        'Tic Tac Toe is a game played on a 3x3 grid where players take turns '
+        'placing X or O in the cells. The goal is to form a horizontal, '
+        'vertical, or diagonal line with three of your own marks. '
+        'Given a screenshot of the game board and '
+        'a proposed action, please determine what reward the current player '
+        'would receive for taking that action. The rewards are: +1 for a winning '
+        'move, -1 for a move that allows the opponent to win next turn, and 0 '
+        'for all other moves (including invalid moves). You will be given 4 '
+        'options (0-3) to choose from. Please strictly follow the format:\n'
+        'Answer: <number>\n'
+        'where <number> is 0, 1, 2, or 3. For example,\n'
+        'Answer: 1\n\n'
+        'Action: {action}\n'
+        'Options:\n{choices}'
+    )
 
 )
 
