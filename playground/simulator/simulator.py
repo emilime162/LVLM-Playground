@@ -348,10 +348,7 @@ class GameSimulator:
         before_image = batch['screenshot_path_before']
         after_image = batch['screenshot_path_after']
         
-        # Create all options (correct + distractors) for prompt
-        all_options = [action_taken] + all_distractors
-        # Note: The batch should already have these shuffled with correct_index tracked
-        
+
         # Format prompt with options
         prompt_template = self.game_cfg.game_description[self.task]
         options_text = '\n'.join([f"{i}. {opt}" for i, opt in enumerate(all_options)])

@@ -1,0 +1,410 @@
+{
+    "inverse_dynamics": {
+        "tictactoe": [
+            {
+                "raw": "Answer: 2",
+                "correct_answer": "C1",
+                "all_options": [
+                    "A1",
+                    "B1",
+                    "C1",
+                    "A2"
+                ],
+                "correct_index": 2
+            },
+            {
+                "raw": "Answer: 3",
+                "correct_answer": "A1",
+                "all_options": [
+                    "B3",
+                    "C2",
+                    "B1",
+                    "A1"
+                ],
+                "correct_index": 3
+            },
+            {
+                "raw": "Answer: 3",
+                "correct_answer": "A3",
+                "all_options": [
+                    "C3",
+                    "B3",
+                    "B1",
+                    "A3"
+                ],
+                "correct_index": 3
+            },
+            {
+                "raw": "Answer: 3",
+                "correct_answer": "A1",
+                "all_options": [
+                    "B2",
+                    "A3",
+                    "A2",
+                    "A1"
+                ],
+                "correct_index": 3
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_answer": "B3",
+                "all_options": [
+                    "A3",
+                    "B3",
+                    "A2",
+                    "C1"
+                ],
+                "correct_index": 1
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_answer": "C1",
+                "all_options": [
+                    "C1",
+                    "C2",
+                    "B2",
+                    "B1"
+                ],
+                "correct_index": 0
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_answer": "B3",
+                "all_options": [
+                    "C3",
+                    "B3",
+                    "C1",
+                    "C2"
+                ],
+                "correct_index": 1
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "reward_modeling": {
+        "tictactoe": [
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "A3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": -1,
+                "correct_index": 2,
+                "action": "B2"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 1,
+                "correct_index": 1,
+                "action": "C3"
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "B3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C2"
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_reward": -1,
+                "correct_index": 2,
+                "action": "A1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "A3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "B3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C3"
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C1"
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_reward": -1,
+                "correct_index": 2,
+                "action": "A2"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": -1,
+                "correct_index": 2,
+                "action": "A2"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "B1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 1,
+                "correct_index": 1,
+                "action": "C1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C2"
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "A1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 1,
+                "correct_index": 1,
+                "action": "A1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "C3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "B3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": -1,
+                "correct_index": 2,
+                "action": "B1"
+            },
+            {
+                "raw": "Answer: 1",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "A1"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "A3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "B3"
+            },
+            {
+                "raw": "Answer: 0",
+                "correct_reward": 0,
+                "correct_index": 0,
+                "action": "B3"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    }
+}
