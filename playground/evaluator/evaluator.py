@@ -31,6 +31,10 @@ class Evaluator:
             return self.run_qa(batch)
         elif self.task == 'forward_dynamics':
             return self.run_forward_dynamics(batch)
+        elif self.task == 'inverse_dynamics':  # ← ADD THIS
+            return self.run_inverse_dynamics(batch)
+        elif self.task == 'reward_modeling':  # ← ADD THIS
+            return self.run_reward_modeling(batch)
         else:
             raise ValueError(f'Invalid task type: {self.task}')
 
@@ -95,6 +99,35 @@ class Evaluator:
         result = simulator.forward_dynamics(batch)
 
         return result, simulator
+
+    def run_inverse_dynamics(self, batch):
+        """Run inverse dynamics evaluation."""
+        crt_save_path = osp.join(self.save_path)
+        simulator = GameSimulator(self.game_cfg,
+                                  self.agent,
+                                  self.seed,
+                                  crt_save_path,
+                                  self.task,
+                                  log_file=self.log_file)
+        result = simulator.inverse_dynamics(batch)
+
+        return result, simulator
+
+    def run_reward_modeling(self, batch):
+        """Run reward modeling evaluation."""
+        crt_save_path = osp.join(self.save_path)
+        simulator = GameSimulator(self.game_cfg,
+                                  self.agent,
+                                  self.seed,
+                                  crt_save_path,
+                                  self.task,
+                                  log_file=self.log_file)
+        result = simulator.reward_modeling(batch)
+
+        return result, simulator
+
+
+
 
     def cleanup(self):
         torch.cuda.empty_cache()
