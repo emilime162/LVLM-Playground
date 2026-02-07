@@ -341,7 +341,8 @@ class GameSimulator:
         action_taken = batch['gt']['action_taken']
         state_before = batch['gt']['state_before']
         state_after = batch['gt']['state_after']
-        all_distractors = batch['gt'].get('all_distractors', [])
+        all_options = batch['gt'].get('all_options', [])  
+
         
         # Get image paths - expecting two separate images
         before_image = batch['screenshot_path_before']
