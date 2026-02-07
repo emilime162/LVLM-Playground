@@ -114,22 +114,21 @@ game_description = dict(
         'Image-3: Choice 1\n'
         'Image-4: Choice 2\n'
         'Image-5: Choice 3'
-    )
+    ),
 
     inverse_dynamics=(
         'Tic Tac Toe is a game played on a 3x3 grid where players take turns '
-        'placing X or O in the cells. Given two screenshots of the game board, '
-        'the first showing the state BEFORE an action and the second showing '
-        'the state AFTER an action, please determine which action was taken. '
-        'The grid is labeled with rows A to C and columns 1 to 3. '
-        'You will be given 4 options (0-3) to choose from. Please strictly '
-        'follow the format:\n'
+        'placing X or O in the cells. You will see two screenshots:\n'
+        '- Image-1: The board BEFORE the action\n'
+        '- Image-2: The board AFTER the action\n\n'
+        'Determine which action was taken between these two states. '
+        'The grid is labeled with rows A to C and columns 1 to 3.\n\n'
+        'Options:\n{options}\n\n'
+        'Please strictly follow the format:\n'
         'Answer: <number>\n'
-        'where <number> is 0, 1, 2, or 3. For example,\n'
-        'Answer: 2\n\n'
-        'Options:\n{options}'
+        'where <number> is 0, 1, 2, or 3.'
     ),
-
+    
     reward_modeling=(
         'Tic Tac Toe is a game played on a 3x3 grid where players take turns '
         'placing X or O in the cells. The goal is to form a horizontal, '
