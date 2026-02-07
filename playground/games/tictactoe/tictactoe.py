@@ -211,6 +211,15 @@ class TicTacToeLogic(BaseGameLogic):
         if not valid_moves:
             return self.get_inverse_dynamics_state()
         
+        if len(valid_moves) < 3:
+          return self.get_inverse_dynamics_state()
+
+        # Check 3: Must have at least 1 invalid move available
+        all_possible_moves = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']
+        occupied_moves = [m for m in all_possible_moves if m not in valid_moves]
+        if not occupied_moves:
+          return self.get_inverse_dynamics_state()
+
         # Save BOTH formats for before state
         board_before = self.board.copy()  # ← Add this
         current_state = board_state_before
@@ -230,11 +239,9 @@ class TicTacToeLogic(BaseGameLogic):
         
         # Generate distractors...
         other_valid_moves = [m for m in valid_moves if m != action_taken]
-        all_possible_moves = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']
-        occupied_moves = [m for m in all_possible_moves if m not in valid_moves]
         invalid_move = random.choice(occupied_moves) if occupied_moves else None
         
-        num_valid_distractors = min(3, len(other_valid_moves))
+        num_valid_distractors = min(2, len(other_valid_moves))
         sampled_valid_distractors = random.sample(other_valid_moves, num_valid_distractors) if other_valid_moves else []
         
         distractors = sampled_valid_distractors.copy()

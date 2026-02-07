@@ -9,53 +9,51 @@
         "state_before": [
           [
             -1,
-            -1,
+            1,
             0
           ],
           [
-            1,
+            -1,
             -1,
             -1
           ],
           [
             -1,
-            1,
-            -1
+            -1,
+            1
           ]
         ],
         "state_after": [
           [
             -1,
-            -1,
-            0
-          ],
-          [
             1,
-            -1,
             0
           ],
           [
             -1,
-            1,
+            -1,
             -1
+          ],
+          [
+            1,
+            -1,
+            1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "C1",
         "all_options": [
-          "A2",
-          "C1",
-          "B2",
-          "C2",
-          "B3"
-        ],
-        "correct_index": 4,
-        "valid_distractors": [
-          "B2",
+          "A1",
+          "B1",
           "C1",
           "A2"
         ],
-        "invalid_distractor": "C2",
-        "player_symbol": "O"
+        "correct_index": 2,
+        "valid_distractors": [
+          "B1",
+          "A1"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
       }
     },
     {
@@ -64,47 +62,52 @@
       "gt": {
         "state_before": [
           [
-            0,
-            0,
-            1
-          ],
-          [
-            1,
-            1,
+            -1,
+            -1,
             0
           ],
           [
-            0,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             1,
             -1
           ]
         ],
         "state_after": [
           [
-            0,
-            0,
-            1
-          ],
-          [
             1,
-            1,
+            -1,
             0
           ],
           [
-            0,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             1,
-            0
+            -1
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "A1",
         "all_options": [
-          "C3",
+          "B3",
+          "C2",
+          "B1",
+          "A1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "B1",
           "B3"
         ],
-        "correct_index": 0,
-        "valid_distractors": [],
-        "invalid_distractor": "B3",
-        "player_symbol": "O"
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
       }
     },
     {
@@ -113,50 +116,52 @@
       "gt": {
         "state_before": [
           [
-            1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
             1,
             -1
           ],
           [
             -1,
-            0,
-            0
-          ],
-          [
             1,
-            0,
-            1
+            -1
           ]
         ],
         "state_after": [
           [
-            1,
+            -1,
+            -1,
+            1
+          ],
+          [
+            0,
             1,
             -1
           ],
           [
-            0,
-            0,
-            0
-          ],
-          [
+            -1,
             1,
-            0,
-            1
+            -1
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "A3",
         "all_options": [
+          "C3",
+          "B3",
           "B1",
-          "B2",
           "A3"
         ],
-        "correct_index": 0,
+        "correct_index": 3,
         "valid_distractors": [
-          "A3"
+          "B3",
+          "C3"
         ],
-        "invalid_distractor": "B2",
-        "player_symbol": "O"
+        "invalid_distractor": "B1",
+        "player_symbol": "X"
       }
     },
     {
@@ -166,52 +171,50 @@
         "state_before": [
           [
             -1,
-            -1,
-            0
-          ],
-          [
-            -1,
-            -1,
+            1,
             -1
           ],
           [
+            0,
             -1,
+            1
+          ],
+          [
             1,
+            0,
             -1
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
-            0
-          ],
-          [
-            -1,
+            1,
             1,
             -1
           ],
           [
+            0,
             -1,
+            1
+          ],
+          [
             1,
+            0,
             -1
           ]
         ],
-        "action_taken": "B2",
+        "action_taken": "A1",
         "all_options": [
-          "A3",
           "B2",
-          "C1",
-          "B3",
-          "C3"
+          "A3",
+          "A2",
+          "A1"
         ],
-        "correct_index": 1,
+        "correct_index": 3,
         "valid_distractors": [
-          "C3",
-          "B3",
-          "C1"
+          "A3",
+          "B2"
         ],
-        "invalid_distractor": "A3",
+        "invalid_distractor": "A2",
         "player_symbol": "X"
       }
     },
@@ -227,13 +230,13 @@
           ],
           [
             -1,
-            0,
+            -1,
             -1
           ],
           [
             -1,
-            1,
-            0
+            -1,
+            -1
           ]
         ],
         "state_after": [
@@ -244,31 +247,29 @@
           ],
           [
             -1,
-            0,
-            -1
+            -1,
+            1
           ],
           [
-            0,
-            1,
-            0
+            -1,
+            -1,
+            -1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "B3",
         "all_options": [
-          "B1",
-          "C3",
+          "A3",
           "B3",
-          "C1",
-          "A2"
+          "A2",
+          "C1"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "valid_distractors": [
           "A2",
-          "B3",
-          "B1"
+          "C1"
         ],
-        "invalid_distractor": "C3",
-        "player_symbol": "O"
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
       }
     },
     {
@@ -277,54 +278,52 @@
       "gt": {
         "state_before": [
           [
-            1,
-            -1,
-            -1
-          ],
-          [
             -1,
             -1,
-            -1
+            1
           ],
           [
             0,
             -1,
-            1
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
           ]
         ],
         "state_after": [
           [
-            1,
-            -1,
-            -1
-          ],
-          [
             -1,
             -1,
-            0
+            1
           ],
           [
             0,
             -1,
-            1
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "C1",
         "all_options": [
-          "C3",
-          "A3",
-          "A2",
+          "C1",
+          "C2",
           "B2",
-          "B3"
+          "B1"
         ],
-        "correct_index": 4,
+        "correct_index": 0,
         "valid_distractors": [
           "B2",
-          "A3",
-          "A2"
+          "C2"
         ],
-        "invalid_distractor": "C3",
-        "player_symbol": "O"
+        "invalid_distractor": "B1",
+        "player_symbol": "X"
       }
     },
     {
@@ -334,50 +333,50 @@
         "state_before": [
           [
             0,
-            -1,
-            0
-          ],
-          [
-            -1,
             0,
-            1
+            -1
           ],
           [
             1,
             -1,
-            1
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
           ]
         ],
         "state_after": [
           [
             0,
-            -1,
-            0
-          ],
-          [
-            -1,
             0,
+            -1
+          ],
+          [
+            1,
+            -1,
             1
           ],
           [
             1,
-            1,
-            1
+            -1,
+            -1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "B3",
         "all_options": [
-          "C2",
+          "C3",
           "B3",
-          "A2",
-          "B1"
+          "C1",
+          "C2"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "valid_distractors": [
-          "B1",
-          "A2"
+          "C3",
+          "C2"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "C1",
         "player_symbol": "X"
       }
     },
@@ -387,54 +386,52 @@
       "gt": {
         "state_before": [
           [
-            1,
-            1,
-            -1
-          ],
-          [
+            -1,
             0,
+            -1
+          ],
+          [
+            -1,
             -1,
             -1
           ],
           [
             1,
             -1,
-            0
+            -1
           ]
         ],
         "state_after": [
           [
-            1,
-            1,
-            0
+            -1,
+            0,
+            -1
           ],
           [
-            0,
+            1,
             -1,
             -1
           ],
           [
             1,
             -1,
-            0
+            -1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "B1",
         "all_options": [
-          "B3",
-          "C2",
+          "C1",
           "A3",
-          "B2",
-          "A2"
+          "B1",
+          "B2"
         ],
         "correct_index": 2,
         "valid_distractors": [
-          "B3",
-          "C2",
+          "A3",
           "B2"
         ],
-        "invalid_distractor": "A2",
-        "player_symbol": "O"
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
       }
     },
     {
@@ -444,52 +441,50 @@
         "state_before": [
           [
             -1,
-            0,
+            1,
             -1
           ],
           [
             -1,
-            1,
+            0,
             1
           ],
           [
             0,
-            -1,
+            0,
             1
           ]
         ],
         "state_after": [
           [
             -1,
-            0,
+            1,
             -1
           ],
           [
-            -1,
             1,
+            0,
             1
           ],
           [
             0,
-            1,
+            0,
             1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "B1",
         "all_options": [
-          "C2",
-          "A3",
-          "B1",
           "A1",
-          "B2"
-        ],
-        "correct_index": 0,
-        "valid_distractors": [
-          "A1",
+          "B3",
           "A3",
           "B1"
         ],
-        "invalid_distractor": "B2",
+        "correct_index": 3,
+        "valid_distractors": [
+          "A1",
+          "A3"
+        ],
+        "invalid_distractor": "B3",
         "player_symbol": "X"
       }
     },
@@ -509,15 +504,15 @@
             -1
           ],
           [
-            -1,
             1,
+            -1,
             -1
           ]
         ],
         "state_after": [
           [
-            1,
             -1,
+            1,
             -1
           ],
           [
@@ -526,26 +521,24 @@
             -1
           ],
           [
-            -1,
             1,
+            -1,
             -1
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "A2",
         "all_options": [
+          "A2",
           "C3",
-          "A1",
-          "A3",
-          "B3",
-          "C2"
+          "C1",
+          "A3"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "valid_distractors": [
-          "A3",
-          "B3",
-          "C3"
+          "C3",
+          "A3"
         ],
-        "invalid_distractor": "C2",
+        "invalid_distractor": "C1",
         "player_symbol": "X"
       }
     },
@@ -555,53 +548,51 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
+            0,
+            1,
             -1
           ],
           [
             -1,
-            0,
+            -1,
             1
           ],
           [
             -1,
             -1,
-            -1
+            0
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
-            1
-          ],
-          [
-            -1,
             0,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
             1
           ],
           [
             -1,
             -1,
-            -1
+            0
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "B1",
         "all_options": [
-          "A2",
+          "B2",
+          "A3",
           "B1",
-          "C3",
-          "B3",
-          "A3"
-        ],
-        "correct_index": 4,
-        "valid_distractors": [
-          "B1",
-          "C3",
           "A2"
         ],
-        "invalid_distractor": "B3",
+        "correct_index": 2,
+        "valid_distractors": [
+          "B2",
+          "A3"
+        ],
+        "invalid_distractor": "A2",
         "player_symbol": "X"
       }
     },
@@ -613,28 +604,28 @@
           [
             -1,
             1,
+            0
+          ],
+          [
+            1,
+            -1,
             -1
           ],
           [
             -1,
-            0,
-            -1
-          ],
-          [
-            1,
             0,
             -1
           ]
         ],
         "state_after": [
           [
+            -1,
             1,
-            1,
-            -1
+            0
           ],
           [
+            1,
             -1,
-            0,
             -1
           ],
           [
@@ -643,19 +634,17 @@
             -1
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "C1",
         "all_options": [
-          "A1",
-          "B1",
-          "A2",
+          "C1",
           "C3",
-          "A3"
+          "B3",
+          "A2"
         ],
         "correct_index": 0,
         "valid_distractors": [
           "C3",
-          "B1",
-          "A3"
+          "B3"
         ],
         "invalid_distractor": "A2",
         "player_symbol": "X"
@@ -668,52 +657,50 @@
         "state_before": [
           [
             -1,
-            -1,
-            -1
-          ],
-          [
-            0,
-            -1,
-            -1
-          ],
-          [
             1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             -1,
             -1
           ]
         ],
         "state_after": [
           [
+            0,
+            1,
+            -1
+          ],
+          [
             -1,
             -1,
             -1
           ],
           [
-            0,
             -1,
-            0
-          ],
-          [
-            1,
             -1,
             -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "A1",
         "all_options": [
-          "B3",
           "B1",
+          "A2",
           "A1",
-          "C2",
-          "A3"
+          "B3"
         ],
-        "correct_index": 0,
+        "correct_index": 2,
         "valid_distractors": [
-          "A3",
-          "C2",
-          "A1"
+          "B3",
+          "B1"
         ],
-        "invalid_distractor": "B1",
+        "invalid_distractor": "A2",
         "player_symbol": "O"
       }
     },
@@ -723,53 +710,51 @@
       "gt": {
         "state_before": [
           [
-            0,
+            -1,
             -1,
             -1
           ],
           [
+            -1,
             0,
-            1,
-            1
+            0
           ],
           [
-            -1,
-            -1,
+            1,
+            1,
             -1
           ]
         ],
         "state_after": [
           [
-            0,
             -1,
-            -1
-          ],
-          [
-            0,
-            1,
+            -1,
             1
           ],
           [
-            1,
             -1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
             -1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "A3",
         "all_options": [
-          "A3",
-          "B3",
+          "A1",
           "C1",
-          "C2",
-          "A2"
+          "A3",
+          "C3"
         ],
         "correct_index": 2,
         "valid_distractors": [
-          "A2",
-          "A3",
-          "C2"
+          "A1",
+          "C3"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "C1",
         "player_symbol": "X"
       }
     },
@@ -780,16 +765,16 @@
         "state_before": [
           [
             1,
-            0,
+            -1,
             -1
           ],
           [
-            1,
+            -1,
             1,
             -1
           ],
           [
-            0,
+            -1,
             0,
             -1
           ]
@@ -797,33 +782,33 @@
         "state_after": [
           [
             1,
-            0,
-            -1
-          ],
-          [
-            1,
-            1,
-            -1
-          ],
-          [
-            0,
-            0,
+            -1,
             0
+          ],
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "A3",
         "all_options": [
-          "A2",
-          "A3",
+          "A1",
           "B3",
-          "C3"
-        ],
-        "correct_index": 3,
-        "valid_distractors": [
           "A3",
-          "B3"
+          "A2"
         ],
-        "invalid_distractor": "A2",
+        "correct_index": 2,
+        "valid_distractors": [
+          "B3",
+          "A2"
+        ],
+        "invalid_distractor": "A1",
         "player_symbol": "O"
       }
     },
@@ -834,52 +819,50 @@
         "state_before": [
           [
             -1,
-            0,
-            -1
+            -1,
+            0
           ],
           [
             -1,
-            1,
+            -1,
             1
           ],
           [
+            1,
             -1,
-            -1,
-            -1
+            0
           ]
         ],
         "state_after": [
           [
             -1,
             0,
-            -1
+            0
           ],
           [
             -1,
-            1,
+            -1,
             1
           ],
           [
+            1,
             -1,
-            0,
-            -1
+            0
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "A2",
         "all_options": [
-          "C3",
+          "A1",
           "C1",
-          "C2",
-          "A3",
-          "B2"
+          "B2",
+          "A2"
         ],
-        "correct_index": 2,
+        "correct_index": 3,
         "valid_distractors": [
-          "A3",
-          "C1",
-          "C3"
+          "B2",
+          "A1"
         ],
-        "invalid_distractor": "B2",
+        "invalid_distractor": "C1",
         "player_symbol": "O"
       }
     },
@@ -889,53 +872,51 @@
       "gt": {
         "state_before": [
           [
-            -1,
+            1,
             -1,
             -1
           ],
           [
-            -1,
+            0,
             -1,
             0
           ],
           [
+            1,
             -1,
-            -1,
-            1
+            -1
           ]
         ],
         "state_after": [
           [
-            -1,
+            1,
             -1,
             -1
           ],
           [
+            0,
             -1,
-            1,
             0
           ],
           [
-            -1,
-            -1,
-            1
+            1,
+            1,
+            -1
           ]
         ],
-        "action_taken": "B2",
+        "action_taken": "C2",
         "all_options": [
-          "C1",
-          "B2",
           "C2",
-          "A2",
-          "B3"
+          "B2",
+          "C3",
+          "C1"
         ],
-        "correct_index": 1,
+        "correct_index": 0,
         "valid_distractors": [
-          "A2",
-          "C1",
-          "C2"
+          "B2",
+          "C3"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "C1",
         "player_symbol": "X"
       }
     },
@@ -947,52 +928,50 @@
           [
             -1,
             -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            1
+            -1
           ],
           [
             -1,
             -1,
             0
+          ],
+          [
+            -1,
+            -1,
+            1
           ]
         ],
         "state_after": [
           [
             -1,
             -1,
-            1
-          ],
-          [
-            -1,
-            1,
-            1
+            -1
           ],
           [
             -1,
             -1,
             0
+          ],
+          [
+            0,
+            -1,
+            1
           ]
         ],
-        "action_taken": "B2",
+        "action_taken": "C1",
         "all_options": [
+          "B3",
           "C1",
           "A1",
-          "A3",
-          "B1",
-          "B2"
+          "C2"
         ],
-        "correct_index": 4,
+        "correct_index": 1,
         "valid_distractors": [
-          "C1",
-          "B1",
+          "C2",
           "A1"
         ],
-        "invalid_distractor": "A3",
-        "player_symbol": "X"
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
       }
     },
     {
@@ -1002,46 +981,51 @@
         "state_before": [
           [
             -1,
-            1,
-            0
+            0,
+            -1
           ],
           [
-            1,
             0,
-            0
+            1,
+            1
           ],
           [
-            1,
             0,
+            -1,
             1
           ]
         ],
         "state_after": [
           [
+            -1,
             0,
-            1,
-            0
+            -1
           ],
           [
-            1,
             0,
-            0
+            1,
+            1
           ],
           [
-            1,
             0,
+            1,
             1
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "C2",
         "all_options": [
+          "A3",
           "A1",
-          "A2"
+          "C2",
+          "B2"
         ],
-        "correct_index": 0,
-        "valid_distractors": [],
-        "invalid_distractor": "A2",
-        "player_symbol": "O"
+        "correct_index": 2,
+        "valid_distractors": [
+          "A3",
+          "A1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
       }
     },
     {
@@ -1051,46 +1035,48 @@
         "state_before": [
           [
             -1,
-            1,
-            1
-          ],
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            1,
             -1,
-            0
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
           ]
         ],
         "state_after": [
           [
             -1,
-            1,
-            1
+            -1,
+            -1
           ],
           [
-            0,
-            0,
-            1
+            -1,
+            -1,
+            -1
           ],
           [
-            1,
+            -1,
             0,
-            0
+            1
           ]
         ],
         "action_taken": "C2",
         "all_options": [
-          "C2",
+          "A2",
           "C3",
-          "A1"
+          "C2",
+          "B2"
         ],
-        "correct_index": 0,
+        "correct_index": 2,
         "valid_distractors": [
-          "A1"
+          "A2",
+          "B2"
         ],
         "invalid_distractor": "C3",
         "player_symbol": "O"
@@ -1102,54 +1088,52 @@
       "gt": {
         "state_before": [
           [
-            1,
+            0,
             -1,
-            1
+            -1
           ],
           [
-            -1,
-            -1,
-            0
+            0,
+            1,
+            -1
           ],
           [
             1,
-            -1,
-            0
+            1,
+            -1
           ]
         ],
         "state_after": [
           [
-            1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            0
-          ],
-          [
-            1,
             0,
-            0
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "A2",
         "all_options": [
-          "B1",
-          "B2",
           "A2",
+          "C3",
           "C2",
-          "A1"
+          "B3"
         ],
-        "correct_index": 3,
+        "correct_index": 0,
         "valid_distractors": [
-          "B1",
-          "A2",
-          "B2"
+          "C3",
+          "B3"
         ],
-        "invalid_distractor": "A1",
-        "player_symbol": "O"
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
       }
     },
     {
@@ -1160,52 +1144,50 @@
           [
             -1,
             -1,
-            0
+            -1
           ],
           [
-            1,
             -1,
+            0,
             -1
           ],
           [
             -1,
             -1,
-            -1
+            1
           ]
         ],
         "state_after": [
           [
-            -1,
-            1,
-            0
-          ],
-          [
-            1,
+            0,
             -1,
             -1
           ],
           [
             -1,
-            -1,
+            0,
             -1
+          ],
+          [
+            -1,
+            -1,
+            1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "A1",
         "all_options": [
-          "C2",
-          "A2",
-          "C3",
-          "A3",
+          "C1",
+          "A1",
+          "B3",
           "B2"
         ],
         "correct_index": 1,
         "valid_distractors": [
-          "C2",
-          "C3",
-          "B2"
+          "B3",
+          "C1"
         ],
-        "invalid_distractor": "A3",
-        "player_symbol": "X"
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
       }
     },
     {
@@ -1215,180 +1197,12 @@
         "state_before": [
           [
             -1,
-            0,
-            1
-          ],
-          [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            0,
-            1
-          ]
-        ],
-        "state_after": [
-          [
-            -1,
-            0,
-            1
-          ],
-          [
-            0,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            0,
-            1
-          ]
-        ],
-        "action_taken": "B1",
-        "all_options": [
-          "A1",
-          "B1",
-          "C1",
-          "A2",
-          "B3"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "C1",
-          "B3",
-          "A1"
-        ],
-        "invalid_distractor": "A2",
-        "player_symbol": "O"
-      }
-    },
-    {
-      "file_before": "0000023_before.jpg",
-      "file_after": "0000023_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            -1,
             1,
             -1
           ],
           [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
             0,
-            -1
-          ]
-        ],
-        "state_after": [
-          [
-            1,
-            1,
-            -1
-          ],
-          [
             -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            0,
-            -1
-          ]
-        ],
-        "action_taken": "A1",
-        "all_options": [
-          "B1",
-          "C2",
-          "C3",
-          "A1",
-          "A3"
-        ],
-        "correct_index": 3,
-        "valid_distractors": [
-          "B1",
-          "A3",
-          "C3"
-        ],
-        "invalid_distractor": "C2",
-        "player_symbol": "X"
-      }
-    },
-    {
-      "file_before": "0000024_before.jpg",
-      "file_after": "0000024_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            1
-          ]
-        ],
-        "state_after": [
-          [
-            1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            1
-          ]
-        ],
-        "action_taken": "A1",
-        "all_options": [
-          "C3",
-          "B2",
-          "C1",
-          "A1",
-          "B3"
-        ],
-        "correct_index": 3,
-        "valid_distractors": [
-          "C1",
-          "B2",
-          "B3"
-        ],
-        "invalid_distractor": "C3",
-        "player_symbol": "X"
-      }
-    },
-    {
-      "file_before": "0000025_before.jpg",
-      "file_after": "0000025_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            0,
-            1,
-            -1
-          ],
-          [
-            -1,
-            1,
             -1
           ],
           [
@@ -1399,13 +1213,13 @@
         ],
         "state_after": [
           [
-            0,
+            -1,
             1,
             -1
           ],
           [
+            0,
             -1,
-            1,
             -1
           ],
           [
@@ -1416,20 +1230,180 @@
         ],
         "action_taken": "C2",
         "all_options": [
+          "C2",
+          "B3",
+          "A2",
+          "C1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "B3",
+          "C1"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000023_before.jpg",
+      "file_after": "0000023_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "A2",
+          "B3",
           "B2",
+          "C1"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "B2",
+          "A2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000024_before.jpg",
+      "file_after": "0000024_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
           "C3",
-          "C1",
+          "B2",
           "C2",
           "A3"
         ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "C2",
+          "A3"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000025_before.jpg",
+      "file_after": "0000025_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            -1,
+            1
+          ]
+        ],
+        "action_taken": "A2",
+        "all_options": [
+          "C2",
+          "B3",
+          "A1",
+          "A2"
+        ],
         "correct_index": 3,
         "valid_distractors": [
-          "C1",
-          "A3",
-          "C3"
+          "A1",
+          "C2"
         ],
-        "invalid_distractor": "B2",
-        "player_symbol": "X"
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
       }
     },
     {
@@ -1438,13 +1412,13 @@
       "gt": {
         "state_before": [
           [
-            -1,
             1,
+            -1,
             -1
           ],
           [
             0,
-            1,
+            -1,
             -1
           ],
           [
@@ -1456,12 +1430,12 @@
         "state_after": [
           [
             1,
-            1,
-            -1
+            -1,
+            1
           ],
           [
             0,
-            1,
+            -1,
             -1
           ],
           [
@@ -1470,21 +1444,19 @@
             -1
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "A3",
         "all_options": [
-          "B3",
-          "C2",
-          "C1",
-          "B1",
-          "A1"
+          "B2",
+          "A1",
+          "A3",
+          "A2"
         ],
-        "correct_index": 4,
+        "correct_index": 2,
         "valid_distractors": [
-          "C2",
-          "B3",
-          "C1"
+          "B2",
+          "A2"
         ],
-        "invalid_distractor": "B1",
+        "invalid_distractor": "A1",
         "player_symbol": "X"
       }
     },
@@ -1494,53 +1466,51 @@
       "gt": {
         "state_before": [
           [
-            1,
-            1,
+            -1,
+            -1,
             -1
           ],
           [
             -1,
             -1,
-            0
+            -1
           ],
           [
-            0,
             -1,
-            -1
+            -1,
+            1
           ]
         ],
         "state_after": [
           [
-            1,
-            1,
+            -1,
+            -1,
             -1
           ],
           [
             -1,
             1,
-            0
+            -1
           ],
           [
-            0,
             -1,
-            -1
+            -1,
+            1
           ]
         ],
         "action_taken": "B2",
         "all_options": [
-          "B2",
-          "C3",
-          "A3",
+          "B3",
           "A1",
-          "B1"
+          "C3",
+          "B2"
         ],
-        "correct_index": 0,
+        "correct_index": 3,
         "valid_distractors": [
-          "A3",
-          "B1",
-          "C3"
+          "A1",
+          "B3"
         ],
-        "invalid_distractor": "A1",
+        "invalid_distractor": "C3",
         "player_symbol": "X"
       }
     },
@@ -1551,53 +1521,51 @@
         "state_before": [
           [
             -1,
+            0,
+            1
+          ],
+          [
             -1,
+            0,
             -1
           ],
           [
             -1,
             -1,
             1
-          ],
-          [
-            -1,
-            -1,
-            -1
           ]
         ],
         "state_after": [
           [
             -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
+            0,
             1
           ],
           [
             -1,
+            0,
+            -1
+          ],
+          [
+            1,
             -1,
-            0
+            1
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "C1",
         "all_options": [
-          "A3",
+          "C1",
           "C2",
-          "A2",
-          "C3",
-          "B3"
-        ],
-        "correct_index": 3,
-        "valid_distractors": [
           "A3",
-          "A2",
+          "A1"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A1",
           "C2"
         ],
-        "invalid_distractor": "B3",
-        "player_symbol": "O"
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
       }
     },
     {
@@ -1608,12 +1576,12 @@
           [
             -1,
             1,
-            1
+            -1
           ],
           [
             -1,
             -1,
-            -1
+            1
           ],
           [
             0,
@@ -1625,34 +1593,32 @@
           [
             -1,
             1,
+            -1
+          ],
+          [
+            -1,
+            -1,
             1
           ],
           [
-            -1,
-            -1,
-            -1
-          ],
-          [
             0,
-            1,
-            -1
+            -1,
+            1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "C3",
         "all_options": [
-          "B2",
           "C3",
-          "C2",
-          "B3",
+          "A2",
+          "B2",
           "A3"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "valid_distractors": [
           "B2",
-          "B3",
-          "C3"
+          "A3"
         ],
-        "invalid_distractor": "A3",
+        "invalid_distractor": "A2",
         "player_symbol": "X"
       }
     },
@@ -1662,53 +1628,51 @@
       "gt": {
         "state_before": [
           [
-            1,
             0,
+            -1,
             -1
           ],
           [
             -1,
-            0,
+            1,
             -1
           ],
           [
-            1,
+            -1,
             -1,
             -1
           ]
         ],
         "state_after": [
           [
-            1,
             0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
             -1
           ],
           [
             -1,
-            0,
-            -1
-          ],
-          [
-            1,
-            0,
+            -1,
             -1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "B1",
         "all_options": [
-          "A3",
-          "C2",
-          "B1",
+          "A2",
+          "A1",
           "C1",
-          "B3"
+          "B1"
         ],
-        "correct_index": 1,
+        "correct_index": 3,
         "valid_distractors": [
-          "B1",
-          "B3",
-          "A3"
+          "A2",
+          "C1"
         ],
-        "invalid_distractor": "C1",
+        "invalid_distractor": "A1",
         "player_symbol": "O"
       }
     },
@@ -1718,54 +1682,52 @@
       "gt": {
         "state_before": [
           [
-            1,
-            1,
-            -1
+            -1,
+            -1,
+            1
           ],
           [
-            0,
+            -1,
             -1,
             -1
           ],
           [
-            0,
+            -1,
             -1,
             -1
           ]
         ],
         "state_after": [
           [
-            1,
-            1,
-            -1
-          ],
-          [
-            0,
             -1,
+            0,
             1
           ],
           [
-            0,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             -1,
             -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "A2",
         "all_options": [
           "C3",
+          "A3",
           "A2",
-          "C2",
-          "B3",
-          "B2"
+          "C2"
         ],
-        "correct_index": 3,
+        "correct_index": 2,
         "valid_distractors": [
-          "C2",
           "C3",
-          "B2"
+          "C2"
         ],
-        "invalid_distractor": "A2",
-        "player_symbol": "X"
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
       }
     },
     {
@@ -1776,52 +1738,50 @@
           [
             -1,
             -1,
+            1
+          ],
+          [
+            -1,
+            1,
             -1
           ],
           [
             -1,
             -1,
             0
-          ],
-          [
-            -1,
-            1,
-            1
           ]
         ],
         "state_after": [
           [
             -1,
             -1,
+            1
+          ],
+          [
+            1,
+            1,
             -1
           ],
           [
             -1,
             -1,
             0
-          ],
-          [
-            0,
-            1,
-            1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "B1",
         "all_options": [
-          "A1",
-          "B2",
-          "C1",
-          "C3",
+          "A2",
+          "B1",
+          "B3",
           "A3"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "valid_distractors": [
-          "A3",
-          "B2",
-          "A1"
+          "B3",
+          "A2"
         ],
-        "invalid_distractor": "C3",
-        "player_symbol": "O"
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
       }
     },
     {
@@ -1830,53 +1790,51 @@
       "gt": {
         "state_before": [
           [
-            1,
-            0,
-            -1
+            -1,
+            -1,
+            0
           ],
           [
             -1,
+            -1,
+            -1
+          ],
+          [
+            1,
             -1,
             1
-          ],
-          [
-            0,
-            1,
-            -1
           ]
         ],
         "state_after": [
           [
-            1,
-            0,
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
             -1
           ],
           [
-            -1,
-            -1,
-            1
-          ],
-          [
-            0,
             1,
-            0
+            0,
+            1
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "C2",
         "all_options": [
-          "B1",
-          "C3",
           "A3",
-          "B2",
-          "C1"
+          "A2",
+          "A1",
+          "C2"
         ],
-        "correct_index": 1,
+        "correct_index": 3,
         "valid_distractors": [
-          "B2",
-          "B1",
-          "A3"
+          "A1",
+          "A2"
         ],
-        "invalid_distractor": "C1",
+        "invalid_distractor": "A3",
         "player_symbol": "O"
       }
     },
@@ -1886,53 +1844,51 @@
       "gt": {
         "state_before": [
           [
+            1,
             -1,
+            1
+          ],
+          [
             -1,
+            0,
             0
           ],
           [
-            1,
-            1,
-            -1
-          ],
-          [
             -1,
-            -1,
-            -1
+            1,
+            0
           ]
         ],
         "state_after": [
           [
+            1,
             0,
+            1
+          ],
+          [
             -1,
+            0,
             0
           ],
           [
-            1,
-            1,
-            -1
-          ],
-          [
             -1,
-            -1,
-            -1
+            1,
+            0
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "A2",
         "all_options": [
-          "A1",
+          "B2",
+          "B1",
           "A2",
-          "C3",
-          "C2",
-          "A3"
+          "C1"
         ],
-        "correct_index": 0,
+        "correct_index": 2,
         "valid_distractors": [
-          "C2",
-          "C3",
-          "A2"
+          "B1",
+          "C1"
         ],
-        "invalid_distractor": "A3",
+        "invalid_distractor": "B2",
         "player_symbol": "O"
       }
     },
@@ -1942,47 +1898,52 @@
       "gt": {
         "state_before": [
           [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
             1,
             -1,
             1
           ],
           [
             0,
-            0,
-            1
-          ],
-          [
             1,
-            0,
             0
           ]
         ],
-        "state_after": [
-          [
-            1,
-            1,
-            1
-          ],
-          [
-            0,
-            0,
-            1
-          ],
-          [
-            1,
-            0,
-            0
-          ]
-        ],
-        "action_taken": "A2",
+        "action_taken": "C1",
         "all_options": [
           "B2",
-          "A2"
+          "B3",
+          "A2",
+          "C1"
         ],
-        "correct_index": 1,
-        "valid_distractors": [],
-        "invalid_distractor": "B2",
-        "player_symbol": "X"
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "B2"
+        ],
+        "invalid_distractor": "B3",
+        "player_symbol": "O"
       }
     },
     {
@@ -1991,13 +1952,13 @@
       "gt": {
         "state_before": [
           [
-            1,
             -1,
-            -1
+            -1,
+            0
           ],
           [
+            1,
             -1,
-            0,
             -1
           ],
           [
@@ -2008,36 +1969,34 @@
         ],
         "state_after": [
           [
+            -1,
+            -1,
+            0
+          ],
+          [
             1,
             -1,
             -1
           ],
           [
-            -1,
-            0,
-            1
-          ],
-          [
-            -1,
+            1,
             -1,
             -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "C1",
         "all_options": [
           "C1",
-          "C2",
-          "B3",
-          "A3",
-          "B2"
-        ],
-        "correct_index": 2,
-        "valid_distractors": [
-          "A3",
-          "C1",
+          "A2",
+          "B1",
           "C2"
         ],
-        "invalid_distractor": "B2",
+        "correct_index": 0,
+        "valid_distractors": [
+          "C2",
+          "A2"
+        ],
+        "invalid_distractor": "B1",
         "player_symbol": "X"
       }
     },
@@ -2048,50 +2007,48 @@
         "state_before": [
           [
             -1,
-            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
             -1
           ],
           [
-            -1,
-            -1,
-            1
-          ],
-          [
             1,
-            -1,
-            0
+            0,
+            -1
           ]
         ],
         "state_after": [
           [
             -1,
-            0,
-            1
-          ],
-          [
             -1,
-            -1,
-            1
+            0
           ],
           [
             1,
-            -1,
-            0
+            1,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "B1",
         "all_options": [
-          "A1",
-          "B1",
           "C1",
-          "B2",
-          "A3"
+          "C3",
+          "B1",
+          "A2"
         ],
-        "correct_index": 4,
+        "correct_index": 2,
         "valid_distractors": [
-          "B2",
-          "A1",
-          "B1"
+          "A2",
+          "C3"
         ],
         "invalid_distractor": "C1",
         "player_symbol": "X"
@@ -2103,53 +2060,51 @@
       "gt": {
         "state_before": [
           [
+            -1,
             1,
-            -1,
             -1
           ],
           [
-            -1,
-            -1,
-            -1
+            0,
+            1,
+            1
           ],
           [
             -1,
-            -1,
-            -1
+            0,
+            0
           ]
         ],
         "state_after": [
           [
+            -1,
             1,
-            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
             0
-          ],
-          [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            -1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "C1",
         "all_options": [
           "A1",
-          "A3",
           "C3",
-          "B3",
-          "B1"
+          "C1",
+          "A3"
         ],
-        "correct_index": 1,
+        "correct_index": 2,
         "valid_distractors": [
-          "B3",
-          "B1",
-          "C3"
+          "A1",
+          "A3"
         ],
-        "invalid_distractor": "A1",
+        "invalid_distractor": "C3",
         "player_symbol": "O"
       }
     },
@@ -2161,52 +2116,50 @@
           [
             -1,
             -1,
+            -1
+          ],
+          [
+            1,
+            -1,
             1
           ],
           [
             -1,
-            1,
-            -1
-          ],
-          [
             0,
-            1,
             0
           ]
         ],
         "state_after": [
           [
-            0,
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
             -1,
             1
           ],
           [
             -1,
-            1,
-            -1
-          ],
-          [
             0,
-            1,
             0
           ]
         ],
         "action_taken": "A1",
         "all_options": [
-          "C3",
-          "A2",
           "A1",
-          "B3",
-          "B1"
+          "C2",
+          "C1",
+          "A3"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "valid_distractors": [
-          "A2",
-          "B1",
-          "B3"
+          "C1",
+          "A3"
         ],
-        "invalid_distractor": "C3",
-        "player_symbol": "O"
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
       }
     },
     {
@@ -2217,51 +2170,49 @@
           [
             -1,
             -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            0
+            -1
           ],
           [
             1,
             -1,
+            -1
+          ],
+          [
+            -1,
+            0,
             -1
           ]
         ],
         "state_after": [
           [
             -1,
-            0,
-            1
-          ],
-          [
             -1,
-            -1,
-            0
+            -1
           ],
           [
             1,
             -1,
             -1
+          ],
+          [
+            0,
+            0,
+            -1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "C1",
         "all_options": [
-          "B1",
-          "C1",
+          "B3",
           "B2",
-          "C3",
-          "A2"
-        ],
-        "correct_index": 4,
-        "valid_distractors": [
-          "C3",
           "B1",
-          "B2"
+          "C1"
         ],
-        "invalid_distractor": "C1",
+        "correct_index": 3,
+        "valid_distractors": [
+          "B2",
+          "B3"
+        ],
+        "invalid_distractor": "B1",
         "player_symbol": "O"
       }
     },
@@ -2273,16 +2224,16 @@
           [
             -1,
             1,
-            -1
+            0
           ],
           [
-            0,
-            0,
-            -1
+            1,
+            -1,
+            0
           ],
           [
             -1,
-            1,
+            0,
             1
           ]
         ],
@@ -2290,34 +2241,32 @@
           [
             -1,
             1,
-            -1
+            0
           ],
           [
-            0,
-            0,
-            -1
-          ],
-          [
-            0,
             1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
             1
           ]
         ],
         "action_taken": "C1",
         "all_options": [
           "B3",
-          "C1",
-          "A3",
+          "B2",
+          "A1",
+          "C1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
           "B2",
           "A1"
         ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "B3",
-          "A1",
-          "A3"
-        ],
-        "invalid_distractor": "B2",
+        "invalid_distractor": "B3",
         "player_symbol": "O"
       }
     },
@@ -2327,54 +2276,52 @@
       "gt": {
         "state_before": [
           [
+            0,
             -1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            1,
             -1
           ],
           [
-            0,
+            -1,
             -1,
             0
+          ],
+          [
+            1,
+            1,
+            -1
           ]
         ],
         "state_after": [
           [
+            0,
+            0,
+            -1
+          ],
+          [
             -1,
             -1,
-            1
+            0
           ],
           [
             1,
             1,
             -1
-          ],
-          [
-            0,
-            -1,
-            0
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "A2",
         "all_options": [
-          "A1",
           "B1",
           "A2",
           "C3",
-          "C2"
+          "A1"
         ],
         "correct_index": 1,
         "valid_distractors": [
-          "A1",
-          "C2",
-          "A2"
+          "C3",
+          "B1"
         ],
-        "invalid_distractor": "C3",
-        "player_symbol": "X"
+        "invalid_distractor": "A1",
+        "player_symbol": "O"
       }
     },
     {
@@ -2383,7 +2330,7 @@
       "gt": {
         "state_before": [
           [
-            -1,
+            0,
             1,
             -1
           ],
@@ -2395,42 +2342,40 @@
           [
             -1,
             -1,
-            -1
+            1
           ]
         ],
         "state_after": [
           [
-            -1,
+            0,
             1,
             -1
           ],
           [
-            1,
             -1,
-            -1
+            -1,
+            0
           ],
           [
             -1,
             -1,
-            -1
+            1
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "B3",
         "all_options": [
-          "C3",
-          "B1",
-          "A2",
-          "A1",
-          "B3"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
           "B3",
-          "A1",
-          "C3"
+          "A3",
+          "C1",
+          "A2"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "C1",
+          "A3"
         ],
         "invalid_distractor": "A2",
-        "player_symbol": "X"
+        "player_symbol": "O"
       }
     },
     {
@@ -2439,54 +2384,52 @@
       "gt": {
         "state_before": [
           [
+            -1,
             1,
+            0
+          ],
+          [
+            -1,
             -1,
             -1
           ],
           [
             -1,
-            -1,
-            1
-          ],
-          [
-            0,
-            -1,
+            1,
             -1
           ]
         ],
         "state_after": [
           [
+            -1,
             1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            1
+            0
           ],
           [
             0,
             -1,
             -1
+          ],
+          [
+            -1,
+            1,
+            -1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "B1",
         "all_options": [
           "A2",
+          "B1",
           "C1",
-          "C2",
-          "C3",
-          "A3"
+          "C3"
         ],
-        "correct_index": 4,
+        "correct_index": 1,
         "valid_distractors": [
-          "C3",
-          "C2",
-          "A2"
+          "C1",
+          "C3"
         ],
-        "invalid_distractor": "C1",
-        "player_symbol": "X"
+        "invalid_distractor": "A2",
+        "player_symbol": "O"
       }
     },
     {
@@ -2496,53 +2439,51 @@
         "state_before": [
           [
             -1,
-            0,
-            1
+            -1,
+            0
           ],
           [
-            -1,
+            1,
             -1,
             -1
           ],
           [
-            -1,
-            -1,
+            0,
+            1,
             -1
           ]
         ],
         "state_after": [
           [
             -1,
-            0,
-            1
+            -1,
+            0
           ],
           [
-            0,
-            -1,
+            1,
+            1,
             -1
           ],
           [
-            -1,
-            -1,
+            0,
+            1,
             -1
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "B2",
         "all_options": [
-          "A3",
-          "B1",
+          "C3",
+          "B3",
           "B2",
-          "C1",
-          "A1"
+          "A3"
         ],
-        "correct_index": 1,
+        "correct_index": 2,
         "valid_distractors": [
-          "A1",
-          "C1",
-          "B2"
+          "B3",
+          "C3"
         ],
         "invalid_distractor": "A3",
-        "player_symbol": "O"
+        "player_symbol": "X"
       }
     },
     {
@@ -2551,9 +2492,9 @@
       "gt": {
         "state_before": [
           [
+            1,
             -1,
-            -1,
-            -1
+            0
           ],
           [
             -1,
@@ -2563,41 +2504,39 @@
           [
             -1,
             -1,
-            1
+            -1
           ]
         ],
         "state_after": [
           [
+            1,
             -1,
+            0
+          ],
+          [
             -1,
+            1,
             -1
           ],
           [
             -1,
             -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            1
+            -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "B2",
         "all_options": [
+          "A3",
           "B2",
-          "C1",
-          "B3",
           "B1",
-          "C3"
-        ],
-        "correct_index": 2,
-        "valid_distractors": [
-          "B1",
-          "B2",
           "C1"
         ],
-        "invalid_distractor": "C3",
+        "correct_index": 1,
+        "valid_distractors": [
+          "C1",
+          "B1"
+        ],
+        "invalid_distractor": "A3",
         "player_symbol": "X"
       }
     },
@@ -2607,14 +2546,14 @@
       "gt": {
         "state_before": [
           [
-            1,
-            0,
+            -1,
+            -1,
             1
           ],
           [
+            -1,
             0,
-            1,
-            -1
+            1
           ],
           [
             -1,
@@ -2624,14 +2563,14 @@
         ],
         "state_after": [
           [
+            -1,
             1,
-            0,
             1
           ],
           [
+            -1,
             0,
-            1,
-            0
+            1
           ],
           [
             -1,
@@ -2639,20 +2578,20 @@
             -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "A2",
         "all_options": [
-          "C1",
           "B3",
-          "C3",
-          "B1"
+          "C1",
+          "A1",
+          "A2"
         ],
-        "correct_index": 1,
+        "correct_index": 3,
         "valid_distractors": [
           "C1",
-          "C3"
+          "A1"
         ],
-        "invalid_distractor": "B1",
-        "player_symbol": "O"
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
       }
     },
     {
@@ -2661,53 +2600,51 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
-            1
-          ],
-          [
-            0,
+            1,
             -1,
             -1
           ],
           [
-            1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             -1,
             -1
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
-            1
-          ],
-          [
-            0,
-            -1,
-            1
-          ],
-          [
             1,
+            -1,
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             -1,
             -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "A3",
         "all_options": [
-          "C3",
-          "A2",
           "A1",
-          "B3",
+          "A3",
+          "A2",
           "B1"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "valid_distractors": [
           "A2",
-          "A1",
-          "C3"
+          "B1"
         ],
-        "invalid_distractor": "B1",
+        "invalid_distractor": "A1",
         "player_symbol": "X"
       }
     },
@@ -2717,54 +2654,52 @@
       "gt": {
         "state_before": [
           [
-            0,
-            0,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            1
-          ],
-          [
-            -1,
             1,
-            1
-          ]
-        ],
-        "state_after": [
-          [
-            0,
             0,
             0
           ],
           [
             -1,
+            1,
+            0
+          ],
+          [
+            1,
             -1,
-            1
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            1,
+            0,
+            0
           ],
           [
             -1,
             1,
+            0
+          ],
+          [
+            1,
+            -1,
             1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "C3",
         "all_options": [
-          "C1",
+          "C2",
+          "C3",
           "B1",
-          "B2",
-          "A3",
-          "A1"
+          "B3"
         ],
-        "correct_index": 3,
+        "correct_index": 1,
         "valid_distractors": [
-          "C1",
-          "B2",
-          "B1"
+          "B1",
+          "C2"
         ],
-        "invalid_distractor": "A1",
-        "player_symbol": "O"
+        "invalid_distractor": "B3",
+        "player_symbol": "X"
       }
     },
     {
@@ -2775,16 +2710,16 @@
           [
             -1,
             -1,
-            -1
-          ],
-          [
-            1,
-            0,
-            0
+            1
           ],
           [
             -1,
-            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
             1
           ]
         ],
@@ -2792,32 +2727,30 @@
           [
             -1,
             -1,
-            0
+            1
           ],
           [
-            1,
             0,
-            0
+            0,
+            -1
           ],
           [
             -1,
-            1,
+            -1,
             1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "B1",
         "all_options": [
-          "A1",
-          "C1",
-          "A3",
-          "A2",
-          "B2"
+          "B1",
+          "B2",
+          "C2",
+          "C1"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "valid_distractors": [
           "C1",
-          "A2",
-          "A1"
+          "C2"
         ],
         "invalid_distractor": "B2",
         "player_symbol": "O"
@@ -2835,8 +2768,8 @@
           ],
           [
             -1,
-            -1,
-            1
+            1,
+            -1
           ],
           [
             -1,
@@ -2848,11 +2781,11 @@
           [
             -1,
             -1,
-            1
+            -1
           ],
           [
             -1,
-            -1,
+            1,
             1
           ],
           [
@@ -2861,21 +2794,19 @@
             -1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "B3",
         "all_options": [
-          "B3",
-          "C1",
           "C2",
-          "A1",
-          "A3"
+          "C3",
+          "B2",
+          "B3"
         ],
-        "correct_index": 4,
+        "correct_index": 3,
         "valid_distractors": [
-          "C1",
-          "C2",
-          "A1"
+          "C3",
+          "C2"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "B2",
         "player_symbol": "X"
       }
     },
@@ -2886,48 +2817,50 @@
         "state_before": [
           [
             1,
-            0,
-            0
-          ],
-          [
-            1,
-            1,
+            -1,
             -1
           ],
           [
-            0,
-            1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
             -1
           ]
         ],
         "state_after": [
           [
             1,
-            0,
-            0
-          ],
-          [
-            1,
-            1,
-            0
-          ],
-          [
-            0,
-            1,
+            -1,
             -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "C3",
         "all_options": [
-          "C3",
-          "B3",
-          "A3"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
+          "C2",
+          "A1",
+          "B1",
           "C3"
         ],
-        "invalid_distractor": "A3",
+        "correct_index": 3,
+        "valid_distractors": [
+          "C2",
+          "B1"
+        ],
+        "invalid_distractor": "A1",
         "player_symbol": "O"
       }
     },
@@ -2938,35 +2871,35 @@
         "state_before": [
           [
             -1,
-            0,
-            0
-          ],
-          [
-            -1,
             1,
-            1
+            -1
           ],
           [
             -1,
             0,
-            1
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
           ]
         ],
         "state_after": [
           [
             -1,
-            0,
-            0
+            1,
+            -1
           ],
           [
             0,
-            1,
-            1
+            0,
+            -1
           ],
           [
             -1,
-            0,
-            1
+            -1,
+            -1
           ]
         ],
         "action_taken": "B1",
@@ -2974,12 +2907,12 @@
           "A1",
           "B1",
           "B2",
-          "C1"
+          "C2"
         ],
         "correct_index": 1,
         "valid_distractors": [
-          "C1",
-          "A1"
+          "A1",
+          "C2"
         ],
         "invalid_distractor": "B2",
         "player_symbol": "O"
@@ -2992,50 +2925,50 @@
         "state_before": [
           [
             -1,
-            1,
+            0,
             1
           ],
           [
-            1,
             -1,
-            0
+            -1,
+            -1
           ],
           [
-            0,
-            0,
+            -1,
+            -1,
             -1
           ]
         ],
         "state_after": [
           [
             -1,
-            1,
+            0,
             1
           ],
           [
-            1,
-            0,
+            -1,
+            -1,
             0
           ],
           [
-            0,
-            0,
+            -1,
+            -1,
             -1
           ]
         ],
-        "action_taken": "B2",
+        "action_taken": "B3",
         "all_options": [
-          "A1",
+          "A3",
+          "B3",
           "B2",
-          "C3",
-          "B1"
+          "A1"
         ],
         "correct_index": 1,
         "valid_distractors": [
           "A1",
-          "C3"
+          "B2"
         ],
-        "invalid_distractor": "B1",
+        "invalid_distractor": "A3",
         "player_symbol": "O"
       }
     },
@@ -3045,7 +2978,12 @@
       "gt": {
         "state_before": [
           [
-            -1,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
             -1,
             -1
           ],
@@ -3053,45 +2991,38 @@
             -1,
             -1,
             1
-          ],
-          [
-            -1,
-            -1,
-            -1
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
+            0,
+            1,
             -1
           ],
           [
-            1,
+            0,
             -1,
             1
           ],
           [
             -1,
             -1,
-            -1
+            1
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "B3",
         "all_options": [
-          "B1",
-          "A3",
-          "C1",
           "B3",
-          "C2"
+          "C2",
+          "A3",
+          "C3"
         ],
         "correct_index": 0,
         "valid_distractors": [
           "C2",
-          "A3",
-          "C1"
+          "A3"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "C3",
         "player_symbol": "X"
       }
     },
@@ -3102,13 +3033,175 @@
         "state_before": [
           [
             -1,
+            1,
+            -1
+          ],
+          [
             0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "A1",
+          "C2",
+          "B3",
+          "B2"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "B2",
+          "A1"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000057_before.jpg",
+      "file_after": "0000057_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            -1,
             -1
           ],
           [
             -1,
             -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ]
+        ],
+        "action_taken": "B3",
+        "all_options": [
+          "B1",
+          "B3",
+          "C1",
+          "A3"
+        ],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A3",
+          "B1"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000058_before.jpg",
+      "file_after": "0000058_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
             1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "B2",
+          "A1",
+          "B1",
+          "C3"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "A1",
+          "B1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000059_before.jpg",
+      "file_after": "0000059_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
           ],
           [
             -1,
@@ -3118,14 +3211,176 @@
         ],
         "state_after": [
           [
-            -1,
-            0,
+            1,
+            1,
             -1
           ],
           [
             -1,
             1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A1",
+        "all_options": [
+          "B1",
+          "B2",
+          "C1",
+          "A1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "B1",
+          "C1"
+        ],
+        "invalid_distractor": "B2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000060_before.jpg",
+      "file_after": "0000060_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            1,
             1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "action_taken": "B2",
+        "all_options": [
+          "C2",
+          "C1",
+          "B2",
+          "A1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "C1",
+          "A1"
+        ],
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
+      }
+    },
+    {
+      "file_before": "0000061_before.jpg",
+      "file_after": "0000061_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "A3",
+        "all_options": [
+          "B1",
+          "A2",
+          "A3",
+          "C1"
+        ],
+        "correct_index": 2,
+        "valid_distractors": [
+          "A2",
+          "B1"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000062_before.jpg",
+      "file_after": "0000062_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            -1,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
           ],
           [
             -1,
@@ -3136,192 +3391,184 @@
         "action_taken": "B2",
         "all_options": [
           "A2",
-          "A1",
-          "C1",
-          "B2",
-          "A3"
+          "C3",
+          "B1",
+          "B2"
         ],
         "correct_index": 3,
         "valid_distractors": [
+          "A2",
+          "C3"
+        ],
+        "invalid_distractor": "B1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000063_before.jpg",
+      "file_after": "0000063_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "action_taken": "C3",
+        "all_options": [
+          "C3",
+          "B3",
           "A1",
-          "A3",
           "C1"
         ],
-        "invalid_distractor": "A2",
-        "player_symbol": "X"
-      }
-    },
-    {
-      "file_before": "0000057_before.jpg",
-      "file_after": "0000057_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            1,
-            -1,
-            1
-          ],
-          [
-            0,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            -1
-          ]
-        ],
-        "state_after": [
-          [
-            1,
-            -1,
-            1
-          ],
-          [
-            0,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            1,
-            -1
-          ]
-        ],
-        "action_taken": "C2",
-        "all_options": [
-          "B2",
-          "A1",
-          "C3",
-          "A2",
-          "C2"
-        ],
-        "correct_index": 4,
+        "correct_index": 0,
         "valid_distractors": [
-          "C3",
-          "A2",
-          "B2"
+          "A1",
+          "B3"
         ],
-        "invalid_distractor": "A1",
-        "player_symbol": "X"
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
       }
     },
     {
-      "file_before": "0000058_before.jpg",
-      "file_after": "0000058_after.jpg",
+      "file_before": "0000064_before.jpg",
+      "file_after": "0000064_after.jpg",
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
-            -1
-          ],
-          [
             0,
             -1,
-            -1
+            0
           ],
           [
-            0,
             1,
-            1
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
-            -1
-          ],
-          [
             0,
             -1,
-            1
+            0
           ],
           [
-            0,
             1,
-            1
+            1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
           ]
         ],
         "action_taken": "B3",
         "all_options": [
-          "A3",
           "C1",
-          "B3",
-          "B2",
-          "A1"
+          "C2",
+          "A2",
+          "B3"
         ],
-        "correct_index": 2,
+        "correct_index": 3,
         "valid_distractors": [
-          "A1",
-          "A3",
-          "B2"
+          "A2",
+          "C2"
+        ],
+        "invalid_distractor": "C1",
+        "player_symbol": "O"
+      }
+    },
+    {
+      "file_before": "0000065_before.jpg",
+      "file_after": "0000065_after.jpg",
+      "gt": {
+        "state_before": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "state_after": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            -1,
+            -1
+          ]
+        ],
+        "action_taken": "B1",
+        "all_options": [
+          "C3",
+          "C2",
+          "C1",
+          "B1"
+        ],
+        "correct_index": 3,
+        "valid_distractors": [
+          "C2",
+          "C3"
         ],
         "invalid_distractor": "C1",
         "player_symbol": "X"
       }
     },
     {
-      "file_before": "0000059_before.jpg",
-      "file_after": "0000059_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            -1,
-            0,
-            1
-          ],
-          [
-            -1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            0
-          ]
-        ],
-        "state_after": [
-          [
-            -1,
-            0,
-            1
-          ],
-          [
-            -1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            0,
-            0
-          ]
-        ],
-        "action_taken": "C2",
-        "all_options": [
-          "B2",
-          "C2",
-          "A3",
-          "A1",
-          "C1"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "B2",
-          "A1",
-          "C1"
-        ],
-        "invalid_distractor": "A3",
-        "player_symbol": "O"
-      }
-    },
-    {
-      "file_before": "0000060_before.jpg",
-      "file_after": "0000060_after.jpg",
+      "file_before": "0000066_before.jpg",
+      "file_after": "0000066_after.jpg",
       "gt": {
         "state_before": [
           [
@@ -3342,7 +3589,7 @@
         ],
         "state_after": [
           [
-            0,
+            1,
             -1,
             -1
           ],
@@ -3359,343 +3606,18 @@
         ],
         "action_taken": "A1",
         "all_options": [
-          "A3",
           "A1",
           "A2",
           "C3",
-          "C2"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "C2",
-          "A2",
-          "A3"
-        ],
-        "invalid_distractor": "C3",
-        "player_symbol": "O"
-      }
-    },
-    {
-      "file_before": "0000061_before.jpg",
-      "file_after": "0000061_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            0,
-            -1,
-            1
-          ],
-          [
-            1,
-            1,
-            -1
-          ],
-          [
-            0,
-            -1,
-            -1
-          ]
-        ],
-        "state_after": [
-          [
-            0,
-            -1,
-            1
-          ],
-          [
-            1,
-            1,
-            1
-          ],
-          [
-            0,
-            -1,
-            -1
-          ]
-        ],
-        "action_taken": "B3",
-        "all_options": [
-          "A1",
-          "B3",
-          "C2",
-          "A2",
-          "C3"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "C2",
-          "C3",
-          "A2"
-        ],
-        "invalid_distractor": "A1",
-        "player_symbol": "X"
-      }
-    },
-    {
-      "file_before": "0000062_before.jpg",
-      "file_after": "0000062_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            0,
-            1,
-            1
-          ],
-          [
-            1,
-            -1,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "state_after": [
-          [
-            0,
-            1,
-            1
-          ],
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "action_taken": "B2",
-        "all_options": [
-          "B1",
-          "B2"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [],
-        "invalid_distractor": "B1",
-        "player_symbol": "O"
-      }
-    },
-    {
-      "file_before": "0000063_before.jpg",
-      "file_after": "0000063_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            -1,
-            -1,
-            0
-          ],
-          [
-            1,
-            -1,
-            -1
-          ],
-          [
-            1,
-            1,
-            0
-          ]
-        ],
-        "state_after": [
-          [
-            -1,
-            1,
-            0
-          ],
-          [
-            1,
-            -1,
-            -1
-          ],
-          [
-            1,
-            1,
-            0
-          ]
-        ],
-        "action_taken": "A2",
-        "all_options": [
-          "A2",
-          "B1",
-          "B3",
-          "B2",
-          "A1"
+          "B3"
         ],
         "correct_index": 0,
         "valid_distractors": [
-          "A1",
-          "B2",
-          "B3"
+          "B3",
+          "A2"
         ],
-        "invalid_distractor": "B1",
+        "invalid_distractor": "C3",
         "player_symbol": "X"
-      }
-    },
-    {
-      "file_before": "0000064_before.jpg",
-      "file_after": "0000064_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            -1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            0
-          ],
-          [
-            -1,
-            1,
-            0
-          ]
-        ],
-        "state_after": [
-          [
-            -1,
-            -1,
-            1
-          ],
-          [
-            -1,
-            -1,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ]
-        ],
-        "action_taken": "C1",
-        "all_options": [
-          "A2",
-          "C1",
-          "A3",
-          "B2",
-          "B1"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "A2",
-          "B2",
-          "B1"
-        ],
-        "invalid_distractor": "A3",
-        "player_symbol": "O"
-      }
-    },
-    {
-      "file_before": "0000065_before.jpg",
-      "file_after": "0000065_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            0,
-            1,
-            1
-          ],
-          [
-            1,
-            0,
-            -1
-          ],
-          [
-            1,
-            0,
-            -1
-          ]
-        ],
-        "state_after": [
-          [
-            0,
-            1,
-            1
-          ],
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            1,
-            0,
-            -1
-          ]
-        ],
-        "action_taken": "B3",
-        "all_options": [
-          "A2",
-          "C3",
-          "B3"
-        ],
-        "correct_index": 2,
-        "valid_distractors": [
-          "C3"
-        ],
-        "invalid_distractor": "A2",
-        "player_symbol": "O"
-      }
-    },
-    {
-      "file_before": "0000066_before.jpg",
-      "file_after": "0000066_after.jpg",
-      "gt": {
-        "state_before": [
-          [
-            0,
-            0,
-            -1
-          ],
-          [
-            1,
-            1,
-            0
-          ],
-          [
-            -1,
-            1,
-            -1
-          ]
-        ],
-        "state_after": [
-          [
-            0,
-            0,
-            0
-          ],
-          [
-            1,
-            1,
-            0
-          ],
-          [
-            -1,
-            1,
-            -1
-          ]
-        ],
-        "action_taken": "A3",
-        "all_options": [
-          "C3",
-          "C1",
-          "A3",
-          "A1"
-        ],
-        "correct_index": 2,
-        "valid_distractors": [
-          "C3",
-          "C1"
-        ],
-        "invalid_distractor": "A1",
-        "player_symbol": "O"
       }
     },
     {
@@ -3704,49 +3626,51 @@
       "gt": {
         "state_before": [
           [
-            1,
             -1,
-            1
+            0,
+            -1
+          ],
+          [
+            -1,
+            1,
+            -1
           ],
           [
             1,
             -1,
             0
-          ],
-          [
-            0,
-            0,
-            1
           ]
         ],
         "state_after": [
           [
+            -1,
+            0,
+            -1
+          ],
+          [
             1,
             1,
-            1
+            -1
           ],
           [
             1,
             -1,
             0
-          ],
-          [
-            0,
-            0,
-            1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "B1",
         "all_options": [
-          "A2",
-          "A3",
-          "B2"
+          "B1",
+          "B2",
+          "A1",
+          "A3"
         ],
         "correct_index": 0,
         "valid_distractors": [
-          "B2"
+          "A3",
+          "A1"
         ],
-        "invalid_distractor": "A3",
+        "invalid_distractor": "B2",
         "player_symbol": "X"
       }
     },
@@ -3756,52 +3680,52 @@
       "gt": {
         "state_before": [
           [
-            1,
+            -1,
             -1,
             -1
           ],
           [
-            0,
             -1,
-            0
+            0,
+            -1
           ],
           [
             1,
-            0,
+            -1,
             1
           ]
         ],
         "state_after": [
           [
-            1,
-            1,
+            -1,
+            -1,
             -1
           ],
           [
-            0,
             -1,
+            0,
             0
           ],
           [
             1,
-            0,
+            -1,
             1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "B3",
         "all_options": [
-          "A3",
+          "B1",
           "B2",
-          "C1",
-          "A2"
+          "A3",
+          "B3"
         ],
         "correct_index": 3,
         "valid_distractors": [
-          "B2",
+          "B1",
           "A3"
         ],
-        "invalid_distractor": "C1",
-        "player_symbol": "X"
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
       }
     },
     {
@@ -3810,51 +3734,49 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            1,
-            0
-          ],
-          [
             0,
             -1,
             -1
           ],
           [
             1,
-            1,
+            -1,
+            1
+          ],
+          [
+            0,
+            -1,
             -1
           ]
         ],
         "state_after": [
           [
-            -1,
+            0,
+            0,
+            -1
+          ],
+          [
             1,
-            0
+            -1,
+            1
           ],
           [
             0,
             -1,
             -1
-          ],
-          [
-            1,
-            1,
-            0
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "A2",
         "all_options": [
-          "A1",
+          "A2",
           "C1",
-          "B3",
           "B2",
-          "C3"
+          "C2"
         ],
-        "correct_index": 4,
+        "correct_index": 0,
         "valid_distractors": [
-          "A1",
-          "B2",
-          "B3"
+          "C2",
+          "B2"
         ],
         "invalid_distractor": "C1",
         "player_symbol": "O"
@@ -3866,47 +3788,52 @@
       "gt": {
         "state_before": [
           [
-            0,
+            -1,
             1,
             -1
           ],
           [
             1,
-            1,
-            0
+            -1,
+            1
           ],
           [
             0,
-            0,
-            1
+            -1,
+            0
           ]
         ],
         "state_after": [
           [
-            0,
+            -1,
             1,
-            0
+            -1
           ],
           [
             1,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
+            -1,
             1
+          ],
+          [
+            0,
+            1,
+            0
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "C2",
         "all_options": [
           "C2",
-          "A3"
+          "A3",
+          "C3",
+          "B2"
         ],
-        "correct_index": 1,
-        "valid_distractors": [],
-        "invalid_distractor": "C2",
-        "player_symbol": "O"
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
+          "B2"
+        ],
+        "invalid_distractor": "C3",
+        "player_symbol": "X"
       }
     },
     {
@@ -3915,8 +3842,8 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
+            1,
+            0,
             -1
           ],
           [
@@ -3926,42 +3853,40 @@
           ],
           [
             -1,
-            -1,
+            1,
             1
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
+            1,
+            0,
             -1
           ],
           [
             -1,
             0,
-            -1
+            1
           ],
           [
-            1,
             -1,
+            1,
             1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "B3",
         "all_options": [
-          "B2",
           "B3",
+          "B1",
           "A2",
-          "C1",
+          "A3"
+        ],
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
           "B1"
         ],
-        "correct_index": 3,
-        "valid_distractors": [
-          "A2",
-          "B1",
-          "B3"
-        ],
-        "invalid_distractor": "B2",
+        "invalid_distractor": "A2",
         "player_symbol": "X"
       }
     },
@@ -3971,54 +3896,52 @@
       "gt": {
         "state_before": [
           [
-            0,
-            -1,
-            -1
-          ],
-          [
             -1,
             -1,
             0
           ],
           [
-            1,
             -1,
+            1,
             1
+          ],
+          [
+            -1,
+            -1,
+            -1
           ]
         ],
         "state_after": [
           [
-            0,
             -1,
-            -1
-          ],
-          [
             -1,
-            1,
             0
           ],
           [
-            1,
             -1,
+            1,
             1
+          ],
+          [
+            -1,
+            -1,
+            0
           ]
         ],
-        "action_taken": "B2",
+        "action_taken": "C3",
         "all_options": [
+          "B1",
           "A3",
-          "A2",
-          "B2",
-          "C1",
-          "B1"
+          "C3",
+          "C1"
         ],
         "correct_index": 2,
         "valid_distractors": [
-          "A3",
-          "A2",
+          "C1",
           "B1"
         ],
-        "invalid_distractor": "C1",
-        "player_symbol": "X"
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
       }
     },
     {
@@ -4029,16 +3952,16 @@
           [
             0,
             1,
-            1
+            -1
           ],
           [
             1,
-            0,
-            0
+            -1,
+            -1
           ],
           [
-            0,
-            1,
+            -1,
+            -1,
             -1
           ]
         ],
@@ -4046,28 +3969,33 @@
           [
             0,
             1,
-            1
+            -1
           ],
           [
             1,
-            0,
-            0
+            1,
+            -1
           ],
           [
-            0,
-            1,
-            0
+            -1,
+            -1,
+            -1
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "B2",
         "all_options": [
-          "C3",
-          "A2"
+          "C1",
+          "B2",
+          "A2",
+          "A3"
         ],
-        "correct_index": 0,
-        "valid_distractors": [],
+        "correct_index": 1,
+        "valid_distractors": [
+          "A3",
+          "C1"
+        ],
         "invalid_distractor": "A2",
-        "player_symbol": "O"
+        "player_symbol": "X"
       }
     },
     {
@@ -4081,46 +4009,44 @@
             -1
           ],
           [
-            -1,
+            0,
             -1,
             1
           ],
           [
             -1,
-            -1,
+            1,
             -1
           ]
         ],
         "state_after": [
           [
             -1,
-            0,
+            -1,
             -1
           ],
           [
-            -1,
-            -1,
+            0,
+            0,
             1
           ],
           [
             -1,
-            -1,
+            1,
             -1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "B2",
         "all_options": [
-          "C2",
-          "A1",
-          "A2",
-          "C3",
-          "B3"
+          "B2",
+          "A3",
+          "B3",
+          "C1"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "valid_distractors": [
-          "A1",
-          "C3",
-          "C2"
+          "A3",
+          "C1"
         ],
         "invalid_distractor": "B3",
         "player_symbol": "O"
@@ -4134,51 +4060,49 @@
           [
             -1,
             -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
             1
-          ],
-          [
-            -1,
-            -1,
-            -1
-          ],
-          [
-            -1,
-            -1,
-            -1
           ]
         ],
         "state_after": [
           [
+            0,
             -1,
-            -1,
-            1
+            -1
           ],
           [
             -1,
-            -1,
+            1,
             0
           ],
           [
+            0,
             -1,
-            -1,
-            -1
+            1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "A1",
         "all_options": [
-          "C1",
-          "B3",
-          "C2",
+          "A2",
+          "C3",
           "A3",
           "A1"
         ],
-        "correct_index": 1,
+        "correct_index": 3,
         "valid_distractors": [
-          "C1",
-          "A1",
-          "C2"
+          "A3",
+          "A2"
         ],
-        "invalid_distractor": "A3",
+        "invalid_distractor": "C3",
         "player_symbol": "O"
       }
     },
@@ -4190,16 +4114,16 @@
           [
             -1,
             -1,
-            1
+            -1
           ],
           [
-            1,
+            -1,
             -1,
             -1
           ],
           [
+            1,
             0,
-            -1,
             -1
           ]
         ],
@@ -4207,34 +4131,32 @@
           [
             -1,
             -1,
-            1
+            -1
           ],
           [
-            1,
+            0,
             -1,
             -1
           ],
           [
-            0,
+            1,
             0,
             -1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "B1",
         "all_options": [
           "B2",
-          "A2",
-          "C1",
+          "C3",
           "C2",
-          "C3"
+          "B1"
         ],
         "correct_index": 3,
         "valid_distractors": [
-          "A2",
           "C3",
           "B2"
         ],
-        "invalid_distractor": "C1",
+        "invalid_distractor": "C2",
         "player_symbol": "O"
       }
     },
@@ -4244,53 +4166,51 @@
       "gt": {
         "state_before": [
           [
+            -1,
+            1,
+            -1
+          ],
+          [
             0,
             -1,
             -1
           ],
           [
-            1,
+            -1,
             -1,
             -1
-          ],
-          [
-            1,
-            1,
-            0
           ]
         ],
         "state_after": [
           [
             0,
+            1,
+            -1
+          ],
+          [
+            0,
             -1,
             -1
           ],
           [
-            1,
             -1,
-            0
-          ],
-          [
-            1,
-            1,
-            0
+            -1,
+            -1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "A1",
         "all_options": [
-          "B3",
+          "A1",
+          "C1",
           "B2",
-          "A2",
-          "C3",
-          "A3"
+          "B1"
         ],
         "correct_index": 0,
         "valid_distractors": [
-          "A2",
           "B2",
-          "A3"
+          "C1"
         ],
-        "invalid_distractor": "C3",
+        "invalid_distractor": "B1",
         "player_symbol": "O"
       }
     },
@@ -4300,7 +4220,7 @@
       "gt": {
         "state_before": [
           [
-            1,
+            -1,
             1,
             -1
           ],
@@ -4311,43 +4231,41 @@
           ],
           [
             0,
-            -1,
-            -1
+            1,
+            0
           ]
         ],
         "state_after": [
           [
+            -1,
             1,
+            -1
+          ],
+          [
+            -1,
             1,
             -1
           ],
           [
             0,
-            -1,
-            -1
-          ],
-          [
-            0,
-            -1,
-            -1
+            1,
+            0
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "B2",
         "all_options": [
-          "A2",
+          "B2",
           "A3",
-          "B1",
-          "B2",
-          "C3"
+          "A2",
+          "B3"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "valid_distractors": [
-          "B2",
-          "C3",
+          "B3",
           "A3"
         ],
         "invalid_distractor": "A2",
-        "player_symbol": "O"
+        "player_symbol": "X"
       }
     },
     {
@@ -4357,17 +4275,17 @@
         "state_before": [
           [
             -1,
-            0,
+            -1,
             -1
           ],
           [
             1,
             -1,
-            0
+            -1
           ],
           [
             -1,
-            -1,
+            0,
             1
           ]
         ],
@@ -4380,29 +4298,27 @@
           [
             1,
             -1,
-            0
+            -1
           ],
           [
-            0,
             -1,
+            0,
             1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "A2",
         "all_options": [
-          "C1",
           "B2",
-          "A3",
+          "A2",
           "C2",
           "B3"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "valid_distractors": [
-          "C2",
-          "A3",
-          "B2"
+          "B2",
+          "B3"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "C2",
         "player_symbol": "O"
       }
     },
@@ -4412,54 +4328,52 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
-            0
-          ],
-          [
-            -1,
             1,
+            -1,
             -1
           ],
           [
-            0,
-            1,
+            -1,
+            -1,
             1
+          ],
+          [
+            0,
+            0,
+            -1
           ]
         ],
         "state_after": [
           [
-            -1,
-            0,
-            0
-          ],
-          [
-            -1,
             1,
+            -1,
             -1
           ],
           [
+            -1,
+            -1,
+            1
+          ],
+          [
             0,
-            1,
+            0,
             1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "C3",
         "all_options": [
-          "A1",
-          "B3",
-          "B1",
-          "A2",
-          "C3"
+          "C2",
+          "B2",
+          "C3",
+          "B1"
         ],
-        "correct_index": 3,
+        "correct_index": 2,
         "valid_distractors": [
-          "A1",
-          "B1",
-          "B3"
+          "B2",
+          "B1"
         ],
-        "invalid_distractor": "C3",
-        "player_symbol": "O"
+        "invalid_distractor": "C2",
+        "player_symbol": "X"
       }
     },
     {
@@ -4469,8 +4383,8 @@
         "state_before": [
           [
             -1,
-            1,
-            0
+            -1,
+            -1
           ],
           [
             -1,
@@ -4478,43 +4392,41 @@
             -1
           ],
           [
+            1,
             -1,
-            -1,
-            1
+            0
           ]
         ],
         "state_after": [
           [
             -1,
-            1,
-            0
-          ],
-          [
             0,
-            -1,
             -1
           ],
           [
             -1,
             -1,
-            1
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
           ]
         ],
-        "action_taken": "B1",
+        "action_taken": "A2",
         "all_options": [
-          "B1",
-          "A3",
-          "C2",
+          "A1",
           "C1",
-          "B3"
+          "A2",
+          "B1"
         ],
-        "correct_index": 0,
+        "correct_index": 2,
         "valid_distractors": [
-          "C1",
-          "B3",
-          "C2"
+          "A1",
+          "B1"
         ],
-        "invalid_distractor": "A3",
+        "invalid_distractor": "C1",
         "player_symbol": "O"
       }
     },
@@ -4524,46 +4436,51 @@
       "gt": {
         "state_before": [
           [
+            -1,
+            -1,
+            1
+          ],
+          [
             0,
             -1,
-            0
-          ],
-          [
-            1,
-            1,
-            0
-          ],
-          [
-            1,
-            0,
             1
+          ],
+          [
+            -1,
+            0,
+            -1
           ]
         ],
         "state_after": [
           [
             0,
-            0,
-            0
-          ],
-          [
-            1,
-            1,
-            0
-          ],
-          [
-            1,
-            0,
+            -1,
             1
+          ],
+          [
+            0,
+            -1,
+            1
+          ],
+          [
+            -1,
+            0,
+            -1
           ]
         ],
-        "action_taken": "A2",
+        "action_taken": "A1",
         "all_options": [
-          "B1",
-          "A2"
+          "A2",
+          "A3",
+          "C3",
+          "A1"
         ],
-        "correct_index": 1,
-        "valid_distractors": [],
-        "invalid_distractor": "B1",
+        "correct_index": 3,
+        "valid_distractors": [
+          "A2",
+          "C3"
+        ],
+        "invalid_distractor": "A3",
         "player_symbol": "O"
       }
     },
@@ -4574,50 +4491,50 @@
         "state_before": [
           [
             -1,
-            0,
-            1
+            1,
+            -1
           ],
           [
-            1,
+            -1,
             -1,
             1
           ],
           [
-            0,
-            0,
-            -1
+            -1,
+            -1,
+            0
           ]
         ],
         "state_after": [
           [
-            0,
-            0,
-            1
+            -1,
+            1,
+            -1
           ],
           [
-            1,
+            -1,
             -1,
             1
           ],
           [
+            -1,
             0,
-            0,
-            -1
+            0
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "C2",
         "all_options": [
-          "C3",
           "C1",
-          "B2",
-          "A1"
+          "A3",
+          "C2",
+          "A2"
         ],
-        "correct_index": 3,
+        "correct_index": 2,
         "valid_distractors": [
-          "C3",
-          "B2"
+          "C1",
+          "A3"
         ],
-        "invalid_distractor": "C1",
+        "invalid_distractor": "A2",
         "player_symbol": "O"
       }
     },
@@ -4634,47 +4551,45 @@
           [
             1,
             -1,
-            0
+            1
           ],
           [
-            0,
             -1,
-            1
+            -1,
+            0
           ]
         ],
         "state_after": [
           [
-            0,
             -1,
-            -1
+            -1,
+            1
           ],
           [
             1,
             -1,
-            0
+            1
           ],
           [
-            0,
             -1,
-            1
+            -1,
+            0
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "A3",
         "all_options": [
-          "A1",
-          "B3",
-          "C2",
           "B2",
+          "A3",
+          "B3",
           "A2"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "valid_distractors": [
-          "B2",
           "A2",
-          "C2"
+          "B2"
         ],
         "invalid_distractor": "B3",
-        "player_symbol": "O"
+        "player_symbol": "X"
       }
     },
     {
@@ -4683,54 +4598,52 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
-            0
-          ],
-          [
+            0,
             1,
-            -1,
             -1
           ],
           [
-            1,
+            -1,
+            -1,
+            1
+          ],
+          [
+            -1,
             -1,
             0
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
-            0
-          ],
-          [
-            1,
             0,
+            1,
             -1
           ],
           [
+            -1,
             1,
+            1
+          ],
+          [
+            -1,
             -1,
             0
           ]
         ],
         "action_taken": "B2",
         "all_options": [
-          "A1",
-          "A2",
           "B2",
-          "C2",
-          "B1"
-        ],
-        "correct_index": 2,
-        "valid_distractors": [
-          "A1",
-          "C2",
+          "C1",
+          "B1",
           "A2"
         ],
-        "invalid_distractor": "B1",
-        "player_symbol": "O"
+        "correct_index": 0,
+        "valid_distractors": [
+          "B1",
+          "C1"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
       }
     },
     {
@@ -4741,51 +4654,49 @@
           [
             -1,
             -1,
+            1
+          ],
+          [
+            -1,
+            -1,
             -1
           ],
           [
             -1,
             -1,
-            1
-          ],
-          [
-            0,
-            -1,
-            1
+            -1
           ]
         ],
         "state_after": [
           [
             -1,
             -1,
+            1
+          ],
+          [
+            0,
+            -1,
             -1
           ],
           [
             -1,
             -1,
-            1
-          ],
-          [
-            0,
-            0,
-            1
+            -1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "B1",
         "all_options": [
           "B1",
-          "A2",
           "A1",
-          "C3",
-          "C2"
+          "A3",
+          "C3"
         ],
-        "correct_index": 4,
+        "correct_index": 0,
         "valid_distractors": [
-          "A2",
-          "B1",
+          "C3",
           "A1"
         ],
-        "invalid_distractor": "C3",
+        "invalid_distractor": "A3",
         "player_symbol": "O"
       }
     },
@@ -4795,54 +4706,52 @@
       "gt": {
         "state_before": [
           [
-            1,
             0,
-            0
+            0,
+            1
           ],
           [
+            -1,
             1,
-            -1,
             -1
           ],
           [
             -1,
-            -1,
-            -1
+            0,
+            1
           ]
         ],
         "state_after": [
           [
-            1,
             0,
-            0
+            0,
+            1
           ],
           [
-            1,
+            0,
             1,
             -1
           ],
           [
             -1,
-            -1,
-            -1
+            0,
+            1
           ]
         ],
-        "action_taken": "B2",
+        "action_taken": "B1",
         "all_options": [
           "B3",
+          "B1",
           "C1",
-          "B2",
-          "A3",
-          "C2"
+          "B2"
         ],
-        "correct_index": 2,
+        "correct_index": 1,
         "valid_distractors": [
-          "B3",
           "C1",
-          "C2"
+          "B3"
         ],
-        "invalid_distractor": "A3",
-        "player_symbol": "X"
+        "invalid_distractor": "B2",
+        "player_symbol": "O"
       }
     },
     {
@@ -4856,13 +4765,13 @@
             -1
           ],
           [
-            -1,
-            -1,
-            -1
+            1,
+            0,
+            1
           ],
           [
             0,
-            -1,
+            0,
             -1
           ]
         ],
@@ -4870,32 +4779,30 @@
           [
             -1,
             1,
+            -1
+          ],
+          [
+            1,
+            0,
             1
           ],
           [
-            -1,
-            -1,
-            -1
-          ],
-          [
             0,
-            -1,
-            -1
+            0,
+            1
           ]
         ],
-        "action_taken": "A3",
+        "action_taken": "C3",
         "all_options": [
-          "C1",
           "C3",
-          "C2",
-          "B3",
-          "A3"
+          "A3",
+          "A1",
+          "C1"
         ],
-        "correct_index": 4,
+        "correct_index": 0,
         "valid_distractors": [
-          "C2",
-          "B3",
-          "C3"
+          "A3",
+          "A1"
         ],
         "invalid_distractor": "C1",
         "player_symbol": "X"
@@ -4909,51 +4816,49 @@
           [
             -1,
             -1,
-            0
+            1
           ],
           [
             -1,
-            1,
+            -1,
             -1
           ],
           [
             -1,
-            0,
-            1
+            -1,
+            -1
           ]
         ],
         "state_after": [
           [
             -1,
             -1,
-            0
+            1
+          ],
+          [
+            -1,
+            -1,
+            -1
           ],
           [
             -1,
             1,
             -1
-          ],
-          [
-            1,
-            0,
-            1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "C2",
         "all_options": [
-          "C1",
+          "A3",
           "A2",
-          "A1",
-          "B3",
+          "C1",
           "C2"
         ],
-        "correct_index": 0,
+        "correct_index": 3,
         "valid_distractors": [
-          "B3",
-          "A2",
-          "A1"
+          "C1",
+          "A2"
         ],
-        "invalid_distractor": "C2",
+        "invalid_distractor": "A3",
         "player_symbol": "X"
       }
     },
@@ -4963,51 +4868,51 @@
       "gt": {
         "state_before": [
           [
-            1,
             -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
             0
           ],
           [
-            0,
-            0,
-            1
-          ],
-          [
             -1,
-            1,
-            -1
+            -1,
+            1
           ]
         ],
         "state_after": [
           [
             1,
             -1,
+            -1
+          ],
+          [
+            -1,
+            1,
             0
           ],
           [
-            0,
-            0,
+            -1,
+            -1,
             1
-          ],
-          [
-            1,
-            1,
-            -1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "A1",
         "all_options": [
-          "C3",
-          "A2",
+          "A1",
+          "B1",
           "C1",
-          "C2"
+          "B2"
         ],
-        "correct_index": 2,
+        "correct_index": 0,
         "valid_distractors": [
-          "A2",
-          "C3"
+          "B1",
+          "C1"
         ],
-        "invalid_distractor": "C2",
+        "invalid_distractor": "B2",
         "player_symbol": "X"
       }
     },
@@ -5017,54 +4922,52 @@
       "gt": {
         "state_before": [
           [
-            0,
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
             -1,
             -1
           ],
           [
-            0,
+            -1,
             1,
             -1
-          ],
-          [
-            -1,
-            -1,
-            1
           ]
         ],
         "state_after": [
           [
-            0,
             -1,
-            -1
+            -1,
+            0
           ],
           [
-            0,
-            1,
-            -1
-          ],
-          [
-            0,
+            -1,
             -1,
             1
+          ],
+          [
+            -1,
+            1,
+            -1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "B3",
         "all_options": [
           "A3",
-          "A1",
-          "B3",
-          "C2",
-          "C1"
+          "C1",
+          "C3",
+          "B3"
         ],
-        "correct_index": 4,
+        "correct_index": 3,
         "valid_distractors": [
-          "B3",
-          "A3",
-          "C2"
+          "C1",
+          "C3"
         ],
-        "invalid_distractor": "A1",
-        "player_symbol": "O"
+        "invalid_distractor": "A3",
+        "player_symbol": "X"
       }
     },
     {
@@ -5073,49 +4976,51 @@
       "gt": {
         "state_before": [
           [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
+            -1,
+            -1,
             -1
           ],
           [
-            1,
-            1,
+            -1,
+            -1,
             -1
+          ],
+          [
+            -1,
+            -1,
+            1
           ]
         ],
         "state_after": [
           [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            1
-          ],
-          [
-            1,
-            1,
+            -1,
+            -1,
             -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1
           ]
         ],
-        "action_taken": "B3",
+        "action_taken": "C1",
         "all_options": [
-          "B3",
+          "B1",
           "C3",
-          "A1"
+          "C1",
+          "A2"
         ],
-        "correct_index": 0,
+        "correct_index": 2,
         "valid_distractors": [
-          "C3"
+          "A2",
+          "B1"
         ],
-        "invalid_distractor": "A1",
+        "invalid_distractor": "C3",
         "player_symbol": "X"
       }
     },
@@ -5126,28 +5031,23 @@
         "state_before": [
           [
             -1,
-            0,
-            -1
-          ],
-          [
-            0,
             1,
             -1
           ],
           [
-            1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
             -1,
             -1
           ]
         ],
         "state_after": [
           [
-            0,
-            0,
-            -1
-          ],
-          [
-            0,
+            -1,
             1,
             -1
           ],
@@ -5155,24 +5055,27 @@
             1,
             -1,
             -1
+          ],
+          [
+            -1,
+            -1,
+            -1
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "B1",
         "all_options": [
-          "B2",
-          "A1",
-          "C2",
-          "A3",
-          "B3"
-        ],
-        "correct_index": 1,
-        "valid_distractors": [
-          "C2",
-          "B3",
+          "B1",
+          "C3",
+          "A2",
           "A3"
         ],
-        "invalid_distractor": "B2",
-        "player_symbol": "O"
+        "correct_index": 0,
+        "valid_distractors": [
+          "A3",
+          "C3"
+        ],
+        "invalid_distractor": "A2",
+        "player_symbol": "X"
       }
     },
     {
@@ -5182,52 +5085,50 @@
         "state_before": [
           [
             -1,
-            -1,
-            1
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            -1,
             1,
             -1
+          ],
+          [
+            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0
           ]
         ],
         "state_after": [
           [
             -1,
-            -1,
-            1
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            -1,
             1,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            -1,
+            -1,
             0
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "B2",
         "all_options": [
-          "A2",
-          "C1",
-          "B1",
+          "B2",
+          "B3",
           "A1",
           "C3"
         ],
-        "correct_index": 4,
+        "correct_index": 0,
         "valid_distractors": [
-          "A2",
-          "C1",
+          "B3",
           "A1"
         ],
-        "invalid_distractor": "B1",
+        "invalid_distractor": "C3",
         "player_symbol": "O"
       }
     },
@@ -5242,48 +5143,46 @@
             -1
           ],
           [
-            -1,
-            -1,
-            0
+            0,
+            1,
+            -1
           ],
           [
             1,
-            -1,
-            -1
+            1,
+            0
           ]
         ],
         "state_after": [
           [
             -1,
-            -1,
+            0,
             -1
           ],
           [
-            -1,
-            -1,
-            0
+            0,
+            1,
+            -1
           ],
           [
             1,
-            -1,
+            1,
             0
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "A2",
         "all_options": [
-          "C3",
-          "B3",
-          "A2",
-          "A3",
-          "A1"
-        ],
-        "correct_index": 0,
-        "valid_distractors": [
-          "A3",
           "A1",
+          "A3",
+          "B1",
           "A2"
         ],
-        "invalid_distractor": "B3",
+        "correct_index": 3,
+        "valid_distractors": [
+          "A1",
+          "A3"
+        ],
+        "invalid_distractor": "B1",
         "player_symbol": "O"
       }
     },
@@ -5294,52 +5193,50 @@
         "state_before": [
           [
             -1,
-            1,
+            -1,
             -1
           ],
           [
-            -1,
             1,
-            0
+            -1,
+            -1
           ],
           [
-            -1,
             0,
+            -1,
             -1
           ]
         ],
         "state_after": [
           [
+            -1,
+            -1,
+            -1
+          ],
+          [
             1,
             1,
             -1
           ],
           [
-            -1,
-            1,
-            0
-          ],
-          [
-            -1,
             0,
+            -1,
             -1
           ]
         ],
-        "action_taken": "A1",
+        "action_taken": "B2",
         "all_options": [
-          "A1",
-          "A3",
+          "B2",
           "C3",
-          "B1",
-          "C2"
+          "C1",
+          "B3"
         ],
         "correct_index": 0,
         "valid_distractors": [
-          "A3",
-          "B1",
+          "B3",
           "C3"
         ],
-        "invalid_distractor": "C2",
+        "invalid_distractor": "C1",
         "player_symbol": "X"
       }
     },
@@ -5349,53 +5246,51 @@
       "gt": {
         "state_before": [
           [
-            -1,
-            -1,
+            0,
+            0,
             -1
           ],
           [
-            0,
+            -1,
             1,
             -1
           ],
           [
+            1,
             -1,
-            -1,
-            -1
+            1
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
+            0,
+            0,
             -1
           ],
           [
-            0,
+            -1,
             1,
-            -1
+            0
           ],
           [
+            1,
             -1,
-            0,
-            -1
+            1
           ]
         ],
-        "action_taken": "C2",
+        "action_taken": "B3",
         "all_options": [
-          "C2",
-          "A2",
-          "C1",
-          "C3",
-          "B2"
+          "B1",
+          "B3",
+          "A3",
+          "A2"
         ],
-        "correct_index": 0,
+        "correct_index": 1,
         "valid_distractors": [
-          "A2",
-          "C3",
-          "C1"
+          "B1",
+          "A3"
         ],
-        "invalid_distractor": "B2",
+        "invalid_distractor": "A2",
         "player_symbol": "O"
       }
     },
@@ -5407,52 +5302,50 @@
           [
             -1,
             -1,
-            -1
-          ],
-          [
-            0,
-            0,
             1
           ],
           [
             -1,
-            1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
             -1
           ]
         ],
         "state_after": [
           [
-            -1,
-            -1,
-            -1
-          ],
-          [
             0,
-            0,
+            -1,
             1
           ],
           [
-            1,
-            1,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            -1,
             -1
           ]
         ],
-        "action_taken": "C1",
+        "action_taken": "A1",
         "all_options": [
-          "C2",
-          "A1",
-          "A2",
+          "B2",
           "C1",
-          "C3"
+          "A3",
+          "A1"
         ],
         "correct_index": 3,
         "valid_distractors": [
-          "A2",
-          "C3",
-          "A1"
+          "C1",
+          "B2"
         ],
-        "invalid_distractor": "C2",
-        "player_symbol": "X"
+        "invalid_distractor": "A3",
+        "player_symbol": "O"
       }
     },
     {
@@ -5461,51 +5354,51 @@
       "gt": {
         "state_before": [
           [
-            1,
             -1,
-            1
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
             1,
-            0,
             -1
+          ],
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0
           ]
         ],
         "state_after": [
           [
-            1,
             -1,
-            1
+            1,
+            -1
           ],
           [
             -1,
-            0,
+            -1,
             0
           ],
           [
             1,
-            0,
+            -1,
             0
           ]
         ],
-        "action_taken": "C3",
+        "action_taken": "B3",
         "all_options": [
-          "B1",
-          "C3",
           "A2",
-          "B3"
+          "C2",
+          "B3",
+          "A1"
         ],
-        "correct_index": 1,
+        "correct_index": 2,
         "valid_distractors": [
-          "A2",
-          "B1"
+          "C2",
+          "A1"
         ],
-        "invalid_distractor": "B3",
+        "invalid_distractor": "A2",
         "player_symbol": "O"
       }
     }
