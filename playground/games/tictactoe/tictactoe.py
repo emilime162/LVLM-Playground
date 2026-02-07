@@ -262,6 +262,110 @@ class TicTacToeLogic(BaseGameLogic):
             'all_valid_moves_before': valid_moves
         }
 
+
+
+    def _check_winning_move(self, board, index, player):
+      """Check if placing player symbol at index results in a win."""
+      # Simulate the move
+      temp_board = board.copy()
+      temp_board[index] = player
+      
+      # Check all win positions
+      win_positions = [(0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7),
+                      (2, 5, 8), (0, 4, 8), (2, 4, 6)]
+      for pos in win_positions:
+          if temp_board[pos[0]] == temp_board[pos[1]] == temp_board[pos[2]] == player:
+              return True
+      return False
+
+    def _get_valid_indices(self, board):
+        """Get all empty cell indices."""
+        return [i for i in range(9) if board[i] not in ['X', 'O']]
+
+    def _has_opponent_winning_move(self, board, player):
+        """Check if opponent has any winning move available after player's move."""
+        opponent = 'O' if player == 'X' else 'X'
+        valid_indices = self._get_valid_indices(board)
+        
+        for idx in valid_indices:
+            if self._check_winning_move(board, idx, opponent):
+                return True
+        return False
+
+    def get_reward_modeling_state(self):
+        """Generate state for reward modeling task.
+        
+        Rewards:
+        +1: Winning move (completes 3-in-a-row)
+        -1: Valid move that allows opponent to win next turn
+        0: Valid safe move OR invalid move
+        """
+        self.reset_board()
+        
+        board_state, valid_moves = self.get_rule_state()
+        
+        if not valid_moves:
+            return self.get_reward_modeling_state()
+        
+        # Map moves to indices
+        col_map = {'1': 0, '2': 1, '3': 2}
+        row_map = {'A': 0, 'B': 1, 'C': 2}
+        
+        # Categorize all valid moves
+        winning_moves = []
+        blunder_moves = []  # Moves that let opponent win
+        safe_moves = []
+        
+        for move in valid_moves:
+            row = move[0]
+            col = move[1]
+            idx = row_map[row] * 3 + col_map[col]
+            
+            # Check if this is a winning move
+            if self._check_winning_move(self.board, idx, self.opponent):
+                winning_moves.append(move)
+            else:
+                # Simulate the move and check if opponent can win
+                temp_board = self.board.copy()
+                temp_board[idx] = self.opponent
+                
+                if self._has_opponent_winning_move(temp_board, self.opponent):
+                    blunder_moves.append(move)
+                else:
+                    safe_moves.append(move)
+        
+        # Get invalid moves
+        all_possible_moves = ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']
+        invalid_moves = [m for m in all_possible_moves if m not in valid_moves]
+        
+        # Create move pool with their rewards
+        move_pool = []
+        if winning_moves:
+            move_pool.append(('winning', winning_moves, 1))
+        if blunder_moves:
+            move_pool.append(('blunder', blunder_moves, -1))
+        if safe_moves:
+            move_pool.append(('safe', safe_moves, 0))
+        if invalid_moves:
+            move_pool.append(('invalid', invalid_moves, 0))
+        
+        # If we don't have enough variety, retry
+        if len(move_pool) < 2:
+            return self.get_reward_modeling_state()
+        
+        # Sample a move type
+        move_type, moves, reward = random.choice(move_pool)
+        action = random.choice(moves)
+        
+        return {
+            'state': board_state,
+            'action': action,
+            'reward': reward,
+            'move_type': move_type,  # For debugging
+            'board_state': self.board.copy(),
+            'player_symbol': self.opponent
+        }
+
 class TicTacToeRenderer(QMainWindow):
     """Renderer for Tic Tac Toe UI."""
 
@@ -344,6 +448,10 @@ class TicTacToe(BaseGame):
         """Expose inverse dynamics state generation."""
         return self.logic.get_inverse_dynamics_state()  
 
+    def get_reward_modeling_state(self):
+        """Expose reward modeling state generation."""
+        return self.logic.get_reward_modeling_state()
+        
     def ai_move(self):
         if not self.AI_component or self.logic.is_finish:
             return None

@@ -44,11 +44,12 @@ class Generator:
             self.render_qa(game_cfg, save_path)
         elif task == 'forward_dynamics':
             self.render_forward_dynamics(game_cfg, save_path)
-        elif task == 'inverse_dynamics':  # ADD THIS
+        elif task == 'inverse_dynamics':  
             self.render_inverse_dynamics(game_cfg, save_path)
+        elif task == 'reward_modeling':  
+            self.render_reward_modeling(game_cfg, save_path)
         else:
             raise ValueError(f'Invalid task: {task}')
-
       
     def render_forward_dynamics(self, game_cfg, save_path):
         """Generate forward dynamics MCQ data."""
@@ -183,7 +184,61 @@ class Generator:
         
         return board
 
-
+    def render_reward_modeling(self, game_cfg, save_path):
+        """Generate reward modeling data."""
+        game_class = GAME_REGISTRY.get(game_cfg.game_name)
+        annotations = []
+        
+        for i in range(self.sample_size):
+            game = game_class(game_cfg)
+            
+            # Get reward modeling data
+            reward_data = game.get_reward_modeling_state()
+            
+            # Capture screenshot of state s_t
+            screenshot = game.get_screenshot()
+            screenshot.save(osp.join(save_path, f'{i:07d}.jpg'))
+            
+            # The 4 choices are always the same, correct answer varies
+            choices = [
+                {'value': 0, 'label': 'No immediate reward'},
+                {'value': 1, 'label': 'Positive reward (winning move)'},
+                {'value': -1, 'label': 'Negative reward (allows opponent win)'},
+                {'value': 'uncertain', 'label': 'Uncertain (stochastic)'}
+            ]
+            
+            # Find correct answer index
+            correct_index = None
+            for idx, choice in enumerate(choices):
+                if choice['value'] == reward_data['reward']:
+                    correct_index = idx
+                    break
+            
+            annotation = {
+                'file': f'{i:07d}.jpg',
+                'gt': {
+                    'state': reward_data['state'],
+                    'action': reward_data['action'],
+                    'reward': reward_data['reward'],
+                    'move_type': reward_data['move_type'],
+                    'correct_index': correct_index,
+                    'choices': choices
+                }
+            }
+            annotations.append(annotation)
+            
+            if (i + 1) % 100 == 0:
+                print(f'Generated {i + 1}/{self.sample_size} reward modeling samples')
+        
+        # Save annotations
+        with open(osp.join(save_path, 'annotation.json'), 'w', encoding='utf-8') as json_file:
+            json.dump({
+                'task': 'reward_modeling',
+                'game': game_cfg.game_name,
+                'annotations': annotations,
+            }, json_file, indent=2)
+        
+        print(f'✓ Reward modeling benchmark generated: {save_path}')
 
 
 
@@ -213,26 +268,6 @@ class Generator:
                 'description': 'Invalid move - no change'
             })
                 
-        # # Choice 1: Different action (a'_t) and its next state
-        # game2 = game_class(game_cfg)
-        # game2.logic.board = dynamics_data['current_board'].copy()
-        # dynamics_data2 = game2.get_forward_dynamics_state()
-        # # Make sure it's a different action
-        # while dynamics_data2['action'] == dynamics_data['action']:
-        #     dynamics_data2 = game2.get_forward_dynamics_state()
-        
-        # if dynamics_data2['is_valid']:
-        #     game2.input_move(dynamics_data2['action'])
-        # screenshot = game2.get_screenshot()
-        # screenshot.save(osp.join(save_path, f'{i:07d}_choice_1.jpg'))
-        # choices.append({
-        #     'action': dynamics_data2['action'],
-        #     'next_state': dynamics_data2['next_state'],
-        #     'file': f'{i:07d}_choice_1.jpg',
-        #     'description': 'Different action'
-        # })
-
-
         # Choice 1: Different action from same initial state
         game2 = game_class(game_cfg)
         game2.logic.board = dynamics_data['current_board'].copy()

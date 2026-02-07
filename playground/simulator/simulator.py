@@ -205,10 +205,6 @@ class GameSimulator:
         else:
             raise ValueError('Failed to get screenshot.')
 
-
-
-
-
     def forward_dynamics(self, batch):
         """Run the game simulation in forward dynamics mode."""
         if not self.agent:
@@ -391,7 +387,59 @@ class GameSimulator:
         )
 
 
-
+    def reward_modeling(self, batch):
+        """Run the game simulation in reward modeling mode."""
+        if not self.agent:
+            raise ValueError('No agent set.')
+        
+        if self.game_instance is None:
+            self.new_game()
+        
+        # Extract data
+        state = batch['gt']['state']
+        action = batch['gt']['action']
+        correct_reward = batch['gt']['reward']
+        choices = batch['gt']['choices']
+        correct_index = batch['gt']['correct_index']
+        
+        # Get screenshot
+        screenshot_path = batch['screenshot_path']
+        
+        # Format prompt with action and choices
+        prompt_template = self.game_cfg.game_description[self.task]
+        
+        # Format choices text
+        choices_text = '\n'.join([
+            f"{i}. {choice['label']}" 
+            for i, choice in enumerate(choices)
+        ])
+        
+        prompt = prompt_template.format(
+            action=action,
+            choices=choices_text
+        )
+        
+        # Get agent prediction
+        try:
+            lmm_output = self.agent.get_decision(screenshot_path, prompt)
+        except Exception as e:
+            lmm_output = None
+            self.log(f'Failed to get decision from LMM: {e}')
+        
+        # Log everything
+        self.log(f'State: {state}')
+        self.log(f'Action: {action}')
+        self.log(f'Prompt:\n{prompt}')
+        self.log(f'LMM Output: {lmm_output}')
+        self.log(f'Ground truth reward: {correct_reward}')
+        self.log(f'Correct choice index: {correct_index}')
+        
+        return dict(
+            raw=lmm_output,
+            correct_reward=correct_reward,
+            correct_index=correct_index,
+            action=action
+        )
 
 
 

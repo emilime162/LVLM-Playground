@@ -14,7 +14,7 @@ benchmark_setting = dict(
     sample_size = 100,
     e2e_round = 20,
     #offline_task=['perceive', 'qa', 'rule'],
-    offline_task=['inverse_dynamics'],
+    offline_task=['reward_modeling'],
 
     #offline_task=['forward_dynamics'],  # Add new task
     benchmark_path='benchmark'
