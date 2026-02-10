@@ -2,7 +2,7 @@
     "inverse_dynamics": {
         "tictactoe": [
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "A1",
@@ -13,7 +13,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "B3",
@@ -24,7 +24,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "C3",
@@ -35,7 +35,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "B2",
@@ -46,7 +46,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "A3",
@@ -57,7 +57,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "C1",
@@ -68,7 +68,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "C3",
@@ -79,7 +79,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "C1",
@@ -90,7 +90,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "A1",
@@ -101,7 +101,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "A2",
@@ -112,7 +112,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B2",
@@ -123,7 +123,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "C1",
@@ -134,7 +134,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "B1",
@@ -145,7 +145,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "A1",
@@ -156,7 +156,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "A1",
@@ -167,7 +167,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "A1",
@@ -178,7 +178,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "C2",
@@ -189,7 +189,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "B3",
@@ -200,7 +200,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "A3",
@@ -211,7 +211,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "A2",
@@ -222,7 +222,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "A2",
@@ -233,7 +233,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "C1",
@@ -244,7 +244,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "C2",
@@ -255,7 +255,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "A2",
@@ -266,7 +266,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "C3",
@@ -277,7 +277,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "C2",
@@ -288,7 +288,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "B2",
@@ -299,7 +299,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "B3",
@@ -310,7 +310,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "C1",
@@ -321,7 +321,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "C3",
@@ -332,7 +332,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "A2",
@@ -343,7 +343,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "C3",
@@ -354,7 +354,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "A2",
@@ -365,7 +365,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "A3",
@@ -376,7 +376,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "B2",
@@ -387,7 +387,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "B2",
@@ -398,7 +398,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "C1",
@@ -409,7 +409,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "C1",
@@ -420,7 +420,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "A1",
@@ -431,7 +431,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "A1",
@@ -442,7 +442,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "B3",
@@ -453,7 +453,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "B3",
@@ -464,7 +464,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "B1",
@@ -475,7 +475,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "B3",
@@ -486,7 +486,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "A2",
@@ -497,7 +497,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "C3",
@@ -508,7 +508,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "A3",
@@ -519,7 +519,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "B3",
@@ -530,7 +530,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "A1",
@@ -541,7 +541,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "C2",
@@ -552,7 +552,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B1",
@@ -563,7 +563,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "C2",
@@ -574,7 +574,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "C2",
@@ -585,7 +585,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "A1",
@@ -596,7 +596,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "A3",
@@ -607,7 +607,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "B3",
@@ -618,7 +618,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "A1",
@@ -629,7 +629,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "B1",
@@ -640,7 +640,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "B2",
@@ -651,7 +651,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "B1",
@@ -662,7 +662,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "C2",
@@ -673,7 +673,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "B1",
@@ -684,7 +684,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "A2",
@@ -695,7 +695,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "C3",
@@ -706,7 +706,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "C1",
@@ -717,7 +717,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "C3",
@@ -728,7 +728,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "A1",
@@ -739,7 +739,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B1",
@@ -750,7 +750,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "B1",
@@ -761,7 +761,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "A2",
@@ -772,7 +772,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "C2",
@@ -783,7 +783,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "B3",
@@ -794,7 +794,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "B1",
@@ -805,7 +805,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "C1",
@@ -816,7 +816,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "B2",
@@ -827,7 +827,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "A2",
@@ -838,7 +838,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B2",
@@ -849,7 +849,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "A1",
@@ -860,7 +860,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "B2",
@@ -871,7 +871,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "B2",
@@ -882,7 +882,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "C2",
@@ -893,7 +893,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "A1",
@@ -904,7 +904,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "A2",
@@ -915,7 +915,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "C1",
@@ -926,7 +926,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "A3",
                 "all_options": [
                     "B2",
@@ -937,7 +937,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "B2",
@@ -948,7 +948,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B1",
@@ -959,7 +959,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B3",
@@ -970,7 +970,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "C3",
                 "all_options": [
                     "C3",
@@ -981,7 +981,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C2",
                 "all_options": [
                     "A3",
@@ -992,7 +992,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "A1",
@@ -1003,7 +1003,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "A3",
@@ -1014,7 +1014,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "C1",
                 "all_options": [
                     "B1",
@@ -1025,7 +1025,7 @@
                 "correct_index": 2
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B1",
                 "all_options": [
                     "B1",
@@ -1036,7 +1036,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "B2",
@@ -1047,7 +1047,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A2",
                 "all_options": [
                     "A1",
@@ -1058,7 +1058,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 0",
+                "raw": null,
                 "correct_answer": "B2",
                 "all_options": [
                     "B2",
@@ -1069,7 +1069,7 @@
                 "correct_index": 0
             },
             {
-                "raw": "Answer: 1",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "B1",
@@ -1080,7 +1080,7 @@
                 "correct_index": 1
             },
             {
-                "raw": "Answer: 3",
+                "raw": null,
                 "correct_answer": "A1",
                 "all_options": [
                     "B2",
@@ -1091,7 +1091,7 @@
                 "correct_index": 3
             },
             {
-                "raw": "Answer: 2",
+                "raw": null,
                 "correct_answer": "B3",
                 "all_options": [
                     "A2",
