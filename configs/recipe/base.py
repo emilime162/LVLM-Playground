@@ -7,6 +7,7 @@
 # #games = ['tictactoe', 'reversi', 'gomoku', 'minesweeper', 'sudoku', 'chess']
 # games = ['tictactoe']
 name = 'experiment'
+#save_path = 'experiments'
 save_path = 'error_analysis'
 #tasks = ['perceive', 'qa', 'rule', 'e2e']
 tasks = ['inverse_dynamics']
