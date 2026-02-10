@@ -6,7 +6,7 @@
     },
     "scores": {
         "inverse_dynamics": {
-            "tictactoe": 0.06
+            "tictactoe": 0.07
         }
     },
     "details": {
@@ -99,105 +99,116 @@
                 },
                 {
                     "index": 13,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 1",
+                    "parsed": 1,
+                    "ground_truth": 2
                 },
                 {
                     "index": 14,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 0",
+                    "parsed": 0,
+                    "ground_truth": 2
                 },
                 {
                     "index": 15,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 3",
+                    "parsed": 3,
+                    "ground_truth": 3
                 },
                 {
                     "index": 16,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 2",
+                    "parsed": 2,
+                    "ground_truth": 0
                 },
                 {
                     "index": 17,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 0",
+                    "parsed": 0,
+                    "ground_truth": 1
                 },
                 {
                     "index": 18,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 3",
+                    "parsed": 3,
+                    "ground_truth": 2
                 },
                 {
                     "index": 19,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 20,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 21,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 22,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 23,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 24,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 25,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 26,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 27,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 28,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 29,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 30,

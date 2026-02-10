@@ -19,3 +19,17 @@ benchmark_setting = dict(
     #offline_task=['forward_dynamics'],  # Add new task
     benchmark_path='benchmark'
 )
+
+# display = False
+# save_path = 'experiments/game_history'  
+# maximum_trials = 3
+# device = 'cuda:0'
+# make_video = True
+
+# benchmark_setting = dict(
+#     games=['tictactoe'],
+#     sample_size = 30,
+#     e2e_round = 20,
+#     offline_task=['inverse_dynamics'],
+#     benchmark_path='analysis'  # ← CHANGED
+# )
