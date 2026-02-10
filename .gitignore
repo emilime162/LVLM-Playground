@@ -168,3 +168,4 @@ rebuttal-exp
 #benchmark/
 #evaluation_results
 .vscode
+.env

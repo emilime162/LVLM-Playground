@@ -50,6 +50,27 @@ class OpenAIAgentSingleStep(BaseAgent):
         outputs = outputs.json()
         return outputs['choices'][0]['message']['content']
 
+    def get_decision_multi_image(self, image_paths: list, prompt: str):
+      """Handle multiple images."""
+      # Encode all images
+      base64_images = [encode_image(path, self.input_sz) for path in image_paths]
+      
+      # Build content array
+      content = [{'type': 'text', 'text': prompt}]
+      for b64_img in base64_images:
+          content.append({
+              'type': 'image_url',
+              'image_url': {'url': f'data:image/jpeg;base64,{b64_img}'}
+          })
+      
+      payload = self.base_payload.copy()
+      payload['messages'] = [{'role': 'user', 'content': content}]
+      
+      outputs = requests.post('https://api.openai.com/v1/chat/completions',
+                              headers=self.headers,
+                              json=payload)
+      return outputs.json()['choices'][0]['message']['content']
+
 
 @AGENT_REGISTRY.register('google_single')
 class GoogleAIAgentSingleStep(BaseAgent):
@@ -67,6 +88,23 @@ class GoogleAIAgentSingleStep(BaseAgent):
             'data': pathlib.Path(screenshot_path).read_bytes()
         }
         outputs = self.model.generate_content([prompt, image])
+        return outputs.text
+    
+    def get_decision_multi_image(self, image_paths: list, prompt: str):
+        """Handle multiple images for tasks like forward_dynamics and inverse_dynamics."""
+        # Load all images
+        images = [
+            {
+                'mime_type': 'image/png',
+                'data': pathlib.Path(img_path).read_bytes()
+            }
+            for img_path in image_paths
+        ]
+        
+        # Gemini accepts: [prompt, image1, image2, ...]
+        content = [prompt] + images
+        
+        outputs = self.model.generate_content(content)
         return outputs.text
 
 
@@ -102,6 +140,30 @@ class AnthropicAgentSingleStep(BaseAgent):
         }]
         outputs = self.model.messages.create(**payload)
         return outputs.content[0].text
+
+    def get_decision_multi_image(self, image_paths: list, prompt: str):
+        """Handle multiple images."""
+        base64_images = [encode_image(path, self.input_sz) for path in image_paths]
+        
+        # Build content array: images first, then text
+        content = []
+        for b64_img in base64_images:
+            content.append({
+                'type': 'image',
+                'source': {
+                    'type': 'base64',
+                    'media_type': 'image/png',
+                    'data': b64_img
+                }
+            })
+        content.append({'type': 'text', 'text': prompt})
+        
+        payload = self.base_payload.copy()
+        payload['messages'] = [{'role': 'user', 'content': content}]
+        
+        outputs = self.model.messages.create(**payload)
+        return outputs.content[0].text
+
 
 
 @AGENT_REGISTRY.register('lmdeploy_single')
