@@ -14,39 +14,45 @@
             "tictactoe": [
                 {
                     "index": 0,
-                    "raw": "Answer: 2",
-                    "parsed": 2,
-                    "ground_truth": 2
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 1,
-                    "raw": "Answer: 3",
-                    "parsed": 3,
-                    "ground_truth": 3
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 2,
-                    "raw": "Answer: 3",
-                    "parsed": 3,
-                    "ground_truth": 3
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 3,
-                    "raw": "Answer: 3",
-                    "parsed": 3,
-                    "ground_truth": 3
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 4,
-                    "raw": "Answer: 1",
-                    "parsed": 1,
-                    "ground_truth": 1
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 5,
-                    "raw": "Answer: 0",
-                    "parsed": 0,
-                    "ground_truth": 0
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 6,
@@ -85,10 +91,9 @@
                 },
                 {
                     "index": 11,
-                    "raw": null,
-                    "parsed": null,
-                    "ground_truth": 0,
-                    "reason": "No valid output found."
+                    "raw": "Answer: 0",
+                    "parsed": 0,
+                    "ground_truth": 0
                 },
                 {
                     "index": 12,
@@ -99,39 +104,45 @@
                 },
                 {
                     "index": 13,
-                    "raw": "Answer: 1",
-                    "parsed": 1,
-                    "ground_truth": 2
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 14,
-                    "raw": "Answer: 0",
-                    "parsed": 0,
-                    "ground_truth": 2
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 15,
-                    "raw": "Answer: 3",
-                    "parsed": 3,
-                    "ground_truth": 3
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 16,
-                    "raw": "Answer: 2",
-                    "parsed": 2,
-                    "ground_truth": 0
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 17,
-                    "raw": "Answer: 0",
-                    "parsed": 0,
-                    "ground_truth": 1
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 18,
-                    "raw": "Answer: 3",
-                    "parsed": 3,
-                    "ground_truth": 2
+                    "raw": null,
+                    "parsed": null,
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 19,
@@ -214,421 +225,485 @@
                     "index": 30,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 31,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 32,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 33,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 34,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 35,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 36,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 37,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 38,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 39,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 40,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 41,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 42,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 43,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 44,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 45,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 46,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 47,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 48,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 49,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 50,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 51,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 52,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 53,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 54,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 55,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 56,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 57,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 58,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 59,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 60,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 61,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 62,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 63,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 64,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 3",
+                    "parsed": 3,
+                    "ground_truth": 3
                 },
                 {
                     "index": 65,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 3",
+                    "parsed": 3,
+                    "ground_truth": 3
                 },
                 {
                     "index": 66,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 0",
+                    "parsed": 0,
+                    "ground_truth": 0
                 },
                 {
                     "index": 67,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 0",
+                    "parsed": 0,
+                    "ground_truth": 0
                 },
                 {
                     "index": 68,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 3",
+                    "parsed": 3,
+                    "ground_truth": 3
                 },
                 {
                     "index": 69,
-                    "raw": null,
-                    "parsed": null,
-                    "reason": "No raw output provided"
+                    "raw": "Answer: 0",
+                    "parsed": 0,
+                    "ground_truth": 0
                 },
                 {
                     "index": 70,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 71,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 72,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 73,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 74,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 75,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 76,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 77,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 78,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 79,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 80,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 81,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 82,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 83,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 84,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 85,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 86,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 87,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 88,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 89,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 90,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 91,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 92,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 93,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 94,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 95,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 96,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 0,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 97,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 1,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 98,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 3,
+                    "reason": "No valid output found."
                 },
                 {
                     "index": 99,
                     "raw": null,
                     "parsed": null,
-                    "reason": "No raw output provided"
+                    "ground_truth": 2,
+                    "reason": "No valid output found."
                 }
             ]
         }

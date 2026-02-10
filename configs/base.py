@@ -1,35 +1,35 @@
-display = False
-save_path = 'experiments/game_history'
-maximum_trials = 3
-device = 'cuda:0'
-make_video = True
-
-benchmark_setting = dict(
-    #games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku', 'chess'],
-    # sample_size=2000,
-    # e2e_round=100,
-    #games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku'],
-    games=['tictactoe'],
-
-    sample_size = 100,
-    e2e_round = 20,
-    #offline_task=['perceive', 'qa', 'rule'],
-    offline_task=['inverse_dynamics'],
-
-    #offline_task=['forward_dynamics'],  # Add new task
-    benchmark_path='benchmark'
-)
-
 # display = False
-# save_path = 'experiments/game_history'  
+# save_path = 'experiments/game_history'
 # maximum_trials = 3
 # device = 'cuda:0'
 # make_video = True
 
 # benchmark_setting = dict(
+#     #games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku', 'chess'],
+#     # sample_size=2000,
+#     # e2e_round=100,
+#     #games=['tictactoe', 'gomoku', 'minesweeper', 'reversi', 'sudoku'],
 #     games=['tictactoe'],
-#     sample_size = 30,
+
+#     sample_size = 100,
 #     e2e_round = 20,
+#     #offline_task=['perceive', 'qa', 'rule'],
 #     offline_task=['inverse_dynamics'],
-#     benchmark_path='analysis'  # ← CHANGED
+
+#     #offline_task=['forward_dynamics'],  # Add new task
+#     benchmark_path='benchmark'
 # )
+
+display = False
+save_path = 'experiments/game_history'  
+maximum_trials = 3
+device = 'cuda:0'
+make_video = True
+
+benchmark_setting = dict(
+    games=['tictactoe'],
+    sample_size = 30,
+    e2e_round = 20,
+    offline_task=['inverse_dynamics'],
+    benchmark_path='analysis'  # ← CHANGED
+)
