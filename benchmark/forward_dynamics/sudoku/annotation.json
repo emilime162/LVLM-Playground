@@ -1,0 +1,426 @@
+{
+  "task": "forward_dynamics",
+  "game": "sudoku",
+  "annotations": [
+    {
+      "file_before": "0000000_before.jpg",
+      "choices": [
+        "0000000_choice_0.jpg",
+        "0000000_choice_1.jpg",
+        "0000000_choice_2.jpg",
+        "0000000_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 1,
+        "action": "H4 6",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000001_before.jpg",
+      "choices": [
+        "0000001_choice_0.jpg",
+        "0000001_choice_1.jpg",
+        "0000001_choice_2.jpg",
+        "0000001_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 1,
+        "action": "C2 1",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000002_before.jpg",
+      "choices": [
+        "0000002_choice_0.jpg",
+        "0000002_choice_1.jpg",
+        "0000002_choice_2.jpg",
+        "0000002_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 2,
+        "action": "C4 4",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000003_before.jpg",
+      "choices": [
+        "0000003_choice_0.jpg",
+        "0000003_choice_1.jpg",
+        "0000003_choice_2.jpg",
+        "0000003_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "I2 4",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000004_before.jpg",
+      "choices": [
+        "0000004_choice_0.jpg",
+        "0000004_choice_1.jpg",
+        "0000004_choice_2.jpg",
+        "0000004_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "H4 3",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000005_before.jpg",
+      "choices": [
+        "0000005_choice_0.jpg",
+        "0000005_choice_1.jpg",
+        "0000005_choice_2.jpg",
+        "0000005_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "G5 7",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000006_before.jpg",
+      "choices": [
+        "0000006_choice_0.jpg",
+        "0000006_choice_1.jpg",
+        "0000006_choice_2.jpg",
+        "0000006_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "H2 2",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000007_before.jpg",
+      "choices": [
+        "0000007_choice_0.jpg",
+        "0000007_choice_1.jpg",
+        "0000007_choice_2.jpg",
+        "0000007_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 1,
+        "action": "G7 6",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000008_before.jpg",
+      "choices": [
+        "0000008_choice_0.jpg",
+        "0000008_choice_1.jpg",
+        "0000008_choice_2.jpg",
+        "0000008_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 2,
+        "action": "G6 6",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000009_before.jpg",
+      "choices": [
+        "0000009_choice_0.jpg",
+        "0000009_choice_1.jpg",
+        "0000009_choice_2.jpg",
+        "0000009_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "F4 2",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000010_before.jpg",
+      "choices": [
+        "0000010_choice_0.jpg",
+        "0000010_choice_1.jpg",
+        "0000010_choice_2.jpg",
+        "0000010_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "F8 7",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000011_before.jpg",
+      "choices": [
+        "0000011_choice_0.jpg",
+        "0000011_choice_1.jpg",
+        "0000011_choice_2.jpg",
+        "0000011_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "D1 6",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000012_before.jpg",
+      "choices": [
+        "0000012_choice_0.jpg",
+        "0000012_choice_1.jpg",
+        "0000012_choice_2.jpg",
+        "0000012_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "H6 5",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000013_before.jpg",
+      "choices": [
+        "0000013_choice_0.jpg",
+        "0000013_choice_1.jpg",
+        "0000013_choice_2.jpg",
+        "0000013_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "F9 3",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000014_before.jpg",
+      "choices": [
+        "0000014_choice_0.jpg",
+        "0000014_choice_1.jpg",
+        "0000014_choice_2.jpg",
+        "0000014_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 2,
+        "action": "H7 9",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000015_before.jpg",
+      "choices": [
+        "0000015_choice_0.jpg",
+        "0000015_choice_1.jpg",
+        "0000015_choice_2.jpg",
+        "0000015_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "H4 3",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000016_before.jpg",
+      "choices": [
+        "0000016_choice_0.jpg",
+        "0000016_choice_1.jpg",
+        "0000016_choice_2.jpg",
+        "0000016_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "D2 4",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000017_before.jpg",
+      "choices": [
+        "0000017_choice_0.jpg",
+        "0000017_choice_1.jpg",
+        "0000017_choice_2.jpg",
+        "0000017_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "A7 2",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000018_before.jpg",
+      "choices": [
+        "0000018_choice_0.jpg",
+        "0000018_choice_1.jpg",
+        "0000018_choice_2.jpg",
+        "0000018_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "H8 9",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000019_before.jpg",
+      "choices": [
+        "0000019_choice_0.jpg",
+        "0000019_choice_1.jpg",
+        "0000019_choice_2.jpg",
+        "0000019_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "G8 6",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000020_before.jpg",
+      "choices": [
+        "0000020_choice_0.jpg",
+        "0000020_choice_1.jpg",
+        "0000020_choice_2.jpg",
+        "0000020_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 2,
+        "action": "B8 5",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000021_before.jpg",
+      "choices": [
+        "0000021_choice_0.jpg",
+        "0000021_choice_1.jpg",
+        "0000021_choice_2.jpg",
+        "0000021_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 2,
+        "action": "H5 6",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000022_before.jpg",
+      "choices": [
+        "0000022_choice_0.jpg",
+        "0000022_choice_1.jpg",
+        "0000022_choice_2.jpg",
+        "0000022_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 1,
+        "action": "D7 2",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000023_before.jpg",
+      "choices": [
+        "0000023_choice_0.jpg",
+        "0000023_choice_1.jpg",
+        "0000023_choice_2.jpg",
+        "0000023_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "C6 8",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000024_before.jpg",
+      "choices": [
+        "0000024_choice_0.jpg",
+        "0000024_choice_1.jpg",
+        "0000024_choice_2.jpg",
+        "0000024_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "F4 2",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000025_before.jpg",
+      "choices": [
+        "0000025_choice_0.jpg",
+        "0000025_choice_1.jpg",
+        "0000025_choice_2.jpg",
+        "0000025_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 0,
+        "action": "I5 3",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000026_before.jpg",
+      "choices": [
+        "0000026_choice_0.jpg",
+        "0000026_choice_1.jpg",
+        "0000026_choice_2.jpg",
+        "0000026_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "B7 3",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000027_before.jpg",
+      "choices": [
+        "0000027_choice_0.jpg",
+        "0000027_choice_1.jpg",
+        "0000027_choice_2.jpg",
+        "0000027_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 1,
+        "action": "H7 4",
+        "is_valid": false
+      }
+    },
+    {
+      "file_before": "0000028_before.jpg",
+      "choices": [
+        "0000028_choice_0.jpg",
+        "0000028_choice_1.jpg",
+        "0000028_choice_2.jpg",
+        "0000028_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 2,
+        "action": "I8 3",
+        "is_valid": true
+      }
+    },
+    {
+      "file_before": "0000029_before.jpg",
+      "choices": [
+        "0000029_choice_0.jpg",
+        "0000029_choice_1.jpg",
+        "0000029_choice_2.jpg",
+        "0000029_choice_3.jpg"
+      ],
+      "gt": {
+        "correct_index": 3,
+        "action": "E8 6",
+        "is_valid": true
+      }
+    }
+  ]
+}
